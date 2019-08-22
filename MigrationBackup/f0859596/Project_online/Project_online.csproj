@@ -8,10 +8,9 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Project_online</RootNamespace>
     <AssemblyName>Project_online</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -22,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,9 +30,11 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Elmah, Version=2.0.15523.27, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\elmah.corelibrary.2.0.0-alpha001\lib\net40\Elmah.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.MSProject, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
@@ -51,33 +51,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="ConfigurationProject.Client">
-      <Version>0.8.0</Version>
-    </PackageReference>
-    <PackageReference Include="elmah">
-      <Version>1.2.2</Version>
-    </PackageReference>
-    <PackageReference Include="elmah.corelibrary">
-      <Version>2.0.0-alpha001</Version>
-    </PackageReference>
-    <PackageReference Include="JoshuaProjectClient">
-      <Version>0.1.2</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AspNet.SignalR.Client">
-      <Version>2.4.1</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.Office.Project.Server">
-      <Version>1.0.2</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.SharePointOnline.CSOM">
-      <Version>16.1.9119.1200</Version>
-    </PackageReference>
-    <PackageReference Include="PS.Common.CF.Project.Client.Wpf.Package">
-      <Version>5.0.0.55</Version>
-    </PackageReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <Content Include="App_Readme\Elmah.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
