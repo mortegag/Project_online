@@ -15,7 +15,7 @@ class Program{
         const string passWord = "password"; //PWA Password
         static ProjectContext projectContext; //Initialize the ProjectContext Object
 
-        static void Main(string[] args)
+        static void  project()//Main(string[] args)
         {
                  projectContext = new ProjectContext(pwaPath);
                  SecureString securePassword = new SecureString();
@@ -43,8 +43,8 @@ class Program{
 
             ProjectCreationInformation newProj = new ProjectCreationInformation();
             newProj.Id = Guid.NewGuid();
-            newProj.Name = “Test Project";
-            newProj.Description = “This Project is created via CSOM";
+            newProj.Name = "Test Project";
+            newProj.Description = "This Project is created via CSOM";
             newProj.Start = DateTime.Today.Date;
             newProj.EnterpriseProjectTypeId = new Guid("09fa52b4-059b-4527-926e-99f9be96437a");
             PublishedProject newPublishedProj = projectContext.Projects.Add(newProj);
@@ -54,8 +54,8 @@ class Program{
         }
 
 
-        private static void GetTasksOfProject() {
-
+        private static void GetTasksOfProject()
+        {
             projectContext.Load(projectContext.Projects); //Load Projects from PWA
             projectContext.ExecuteQuery();
             Guid ProjectGuid = new Guid("b7dfde50-7a2d-e611-9bf8-681729bb2204");
@@ -70,7 +70,7 @@ class Program{
             foreach (PublishedTask task in project.Tasks)
             { Console.WriteLine("nt{0}", task.Name); }
             Console.ReadLine();
-            }
+        }
 
         private static void CreateNewTask()
         {
@@ -127,7 +127,7 @@ class Program{
             projectContext.ExecuteQuery();
             var taskToEdit = draftProject.Tasks.First(task => task.Id == TaskGuid);//Get the task to be updated, Here you can also use the property task.Name
             var CustomField = projectContext.CustomFields.First(CF => CF.Id == CustomFieldGuid);
-            var CustomFieldValue = “New Value";
+            var CustomFieldValue = "New Value";
             string internalName = CustomField.InternalName.ToString();//Get internal name of custom field
             taskToEdit[internalName] = CustomFieldValue;//Set custom field value
             draftProject.Publish(true);//Publish and Check-in the project

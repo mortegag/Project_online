@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.757
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_online", "Project_online\Project_online.csproj", "{A7BD0C14-F939-454C-A63D-34DED244802E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D578A57C-155D-4A39-8E78-4CFAE5614DB7}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+		Project_online\solucionCompleta.cs = Project_online\solucionCompleta.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
