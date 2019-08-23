@@ -13,47 +13,8 @@ namespace Project_online
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            int id = 0;
-            
-
-            using (ProjectContext projContext = new ProjectContext("https://aigpanama.sharepoint.com/sites/Proyectos-TI/"))
-            {
-                SecureString password = new SecureString();
-                foreach (char c in "Coco.1961".ToCharArray()) password.AppendChar(c);
-                //Using SharePoint method to load Credentials
-                projContext.Credentials = new SharePointOnlineCredentials("mortega@innovacion.gob.pa", password);
-
-
-                var projects = projContext.Projects;
-                projContext.Load(projects);
-                int j = 1;
-                projContext.ExecuteQuery();
-
-            
-
-                foreach (PublishedProject pubProj in projContext.Projects)
-                {
-                   
-                    string[] proyecto = new string[4];
-                    proyecto[0] = j++.ToString();
-                    proyecto[1] = pubProj.Id.ToString();
-                    proyecto[2] = pubProj.Name;
-                    proyecto[3] = pubProj.CreatedDate.ToString();             
-
-
-                }
-
-                
-            }
-
-
-           
-        }
-
-       
-            private ProjectContext context;
+               
+        private ProjectContext context;
 
             // Custom Enterprise Fields
             private const string CustomFieldGuid = "618D383A-CCBD-11E5-9FC3-966EB9876117";      // must be a valid guid for a custom field in your MS Project Online
@@ -79,6 +40,14 @@ namespace Project_online
                     LookupEntries = new Dictionary<string, LookupEntryEntity>();
                 }
             }
+
+            static void Main(string[] args)
+            {      
+                         
+
+            }
+
+       
 
             // Constructor. Will connect to Project Online with mandratory credentials.
             public void UserProps(string site, string username, string password)
