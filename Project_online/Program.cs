@@ -4,16 +4,27 @@ using System.Linq;
 using System.Text;
 using Microsoft.Office.Project.Server.ClientOM;
 using System.Security;
+using MySql.Data.MySqlClient;
 using Microsoft.ProjectServer.Client;
 using csom=Microsoft.ProjectServer.Client;
 using Microsoft.SharePoint.Client;
 using System.IO;
+using System.Data;
 
 namespace Project_online
 {
-    class Program
-    {
-        static void Main(string[] args)
+
+
+    class bd {
+
+
+    }
+   
+
+    class Project {
+
+
+        public void  actualiza_tareas(string np, string nt, string fi, string ff, int pa2)
         {
 
             using (csom.ProjectContext ProjectCont1 = new csom.ProjectContext("https://aigpanama.sharepoint.com/sites/Proyectos-TI/"))
@@ -23,13 +34,10 @@ namespace Project_online
                 foreach (char c in "Coco.1961".ToCharArray()) password.AppendChar(c);
 
                 ProjectCont1.Credentials = new SharePointOnlineCredentials("mortega@innovacion.gob.pa", password);
-                // var projects = ProjectCont1.Projects;
-                // ProjectCont1.Load(projects);
-                // ProjectCont1.ExecuteQuery();
 
                 var projCollection = ProjectCont1.LoadQuery(
                 ProjectCont1.Projects
-                 .Where(p => p.Name == "DTR-2018005-AIG-KanbanMaestrodeProyecto"));
+                 .Where(p => p.Name == np));
                 ProjectCont1.ExecuteQuery();
                 csom.PublishedProject proj2Edit = projCollection.First();
                 csom.DraftProject projCheckedOut = proj2Edit.CheckOut();
@@ -38,14 +46,14 @@ namespace Project_online
                 csom.DraftTaskCollection tskcoll = projCheckedOut.Tasks;
                 foreach (csom.DraftTask Task in tskcoll)
                 {
-                    if ((Task.Id != null) && (Task.Name == "Procedimientos Electrónico para SIRCEL"))
+                    if ((Task.Id != null) && (Task.Name == nt))
                     {
 
                         ProjectCont1.Load(Task.CustomFields);
                         ProjectCont1.ExecuteQuery();
-                        Task.Name = "Firmas Electrónica para SIRCEL";// txtTache.Text;
-                        Task.Start = DateTime.Today;
-                        Task.PercentComplete = 10;
+                        Task.ActualStart = Convert.ToDateTime(fi); //DateTime.Today;
+                        Task.ActualFinish = Convert.ToDateTime(ff);//DateTime.Today;
+                        Task.PercentComplete = pa2;
                         csom.AssignmentCreationInformation r = new csom.AssignmentCreationInformation();
                         r.Id = Guid.NewGuid();
                         r.TaskId = Task.Id;
@@ -54,17 +62,35 @@ namespace Project_online
                 }
                 projCheckedOut.Publish(true);
                 csom.QueueJob qJob = ProjectCont1.Projects.Update();
-                csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 20);
-
-                //Añadir checkin para protejer el documento
+                csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 20);               
+                
             }
+            
+        }
+        
+    }
 
 
+    class Program
+    {
+        MySqlConnection connect = new MySqlConnection();
+        string exePath = System.Reflection.Assembly.GetEntryAssembly().Location;
 
+
+        static void Main(string[] args)
+        {
+
+            var classProject = new Project();
+            classProject.actualiza_tareas("DTR-2018005-AIG-KanbanMaestrodeProyecto", "Revisión por Legal", "2019-08-19","2019-08-21",10);
+
+       
 
         }
 
-        public void actualiza_tareas( string np, string nt, string nnt )
+  
+
+
+    public void actualiza_tareas( string np, string nt, string nnt )
         {
 
             using (csom.ProjectContext ProjectCont1 = new csom.ProjectContext("https://aigpanama.sharepoint.com/sites/Proyectos-TI/"))
@@ -110,10 +136,7 @@ namespace Project_online
 
 
         }
-
-
     }
-
-
+    
     }
 
