@@ -27,7 +27,11 @@ namespace Project_online
 
 
                 var projects = projContext.Projects;
+
+
                 projContext.Load(projects);
+
+
                 int j = 1;
                 projContext.ExecuteQuery();
 
@@ -44,17 +48,16 @@ namespace Project_online
                     proyecto[2] = pubProj.Name;
                     proyecto[3] = pubProj.CreatedDate.ToString();
 
-                    using (System.IO.StreamWriter writer = new StreamWriter(filePath, true))
-                    {
-                        writer.WriteLine("Message :" + proyecto + "<br/>" + Environment.NewLine + "ver archivo csv" +
-                         "" + Environment.NewLine + "Date :" + DateTime.Now.ToString());
-                        writer.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------" + Environment.NewLine);
-                    }
+                    projContext.Load(projects, c => c.Where(p => p.Id == new Guid(proyecto[1])).IncludeWithDefaultProperties(f => f.Description,
+f => f.FinishDate, f => f.PercentComplete, f => f.StartDate, f => f.Id, f => f.Name,
+f => f.CreatedDate, f => f.Owner.UserId, f => f.CustomFields));
 
 
                 }
 
-                
+
+  
+
             }
 
 

@@ -47,9 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CreateProject.cs" />
+    <Compile Include="CreateUpdateProjectSample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="solucionCompleta.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="ssec.cs" />
+    <Compile Include="update.cs" />
+    <Compile Include="UpdateProjectCustomFieldValues.cs" />
+>>>>>>> 6b5bbe27f7a9c380f376fc2780c8e002eb0f9455
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ConfigurationProject.Client">
