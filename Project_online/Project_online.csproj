@@ -50,6 +50,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="solucionCompleta.cs" />
+    <Compile Include="update.cs" />
+    <Compile Include="update2.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ConfigurationProject.Client">
