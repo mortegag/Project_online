@@ -24,7 +24,8 @@ namespace Project_online
 
                     projContext.ExecutingWebRequest += claimsHelper.clientContext_ExecutingWebRequest;
 
-                    var PrjList = projContext.LoadQuery(projContext.Projects.Where(proj => proj.Id == ProjectId));
+                    var PrjList = projContext.LoadQuery(projContext.Projects.Where(proj => proj.Name == ""));
+                    
                     projContext.ExecuteQuery();
                     Guid pGuid = PrjList.First().Id;
 
