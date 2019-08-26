@@ -11,4 +11,6 @@ Contraseña nueva para SENADIS:
 Usuario: SENADIS contraseña: #5072458
 
 
- 
+ https://social.technet.microsoft.com/Forums/en-US/78665a55-e717-4c7e-997e-90db8807acda/update-a-task-using-csom?forum=projectserver2010general
+
+https://social.msdn.microsoft.com/Forums/en-US/c91644b7-3c0f-4d65-a8d7-2dec128d1dcf/project-lookup-custom-field-update-with-csom?forum=project2010custprog

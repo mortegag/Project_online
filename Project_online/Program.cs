@@ -55,6 +55,8 @@ namespace Project_online
                 projCheckedOut.Publish(true);
                 csom.QueueJob qJob = ProjectCont1.Projects.Update();
                 csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 20);
+
+                //Añadir checkin para protejer el documento
             }
 
 
