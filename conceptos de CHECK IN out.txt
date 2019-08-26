@@ -1,0 +1,39 @@
+¿Qué significa el registro de entrada / salida?
+Check-in y check-out son términos comunes en muchos sistemas de administración de documentos, 
+incluido SharePoint. Su propósito es evitar conflictos en un entorno en el que varias personas 
+quieran editar el mismo contenido (en SharePoint, elementos de lista o archivos) al mismo tiempo. 
+El término check-in describe el proceso de agregar un elemento o archivo nuevo o modificado a una
+ biblioteca de documentos o una lista para reemplazar la versión anterior. 
+El término desprotección describe el proceso de obtener una versión de un documento o elemento
+ de lista en una lista o biblioteca. Al retirar un elemento o un archivo, un usuario 
+puede evitar que otros editen ese contenido. Al registrar el elemento, el usuario puede
+permitir que otros editen el contenido, sin tener que preocuparse por anular los cambios
+ que otros han realizado.
+
+Por lo general, cuando un elemento o un archivo se desprotege a un usuario, ese usuario puede
+ trabajar en ese elemento o archivo, y otros usuarios no pueden. Otros usuarios deben esperar a 
+que el usuario vuelva a registrar el elemento o archivo (es decir, realizar un registro) antes de
+ poder editar el elemento o archivo. Mientras el elemento o archivo está desprotegido, otros usuarios
+ generalmente solo pueden ver la última versión que se registró; no pueden ver los cambios 
+que el usuario actual ha realizado en el archivo mientras está desprotegido.
+
+Las páginas en SharePoint pueden estar en bibliotecas de documentos, y a menudo lo están. 
+Esto significa que las páginas pueden retirarse y entrar, lo que permite a los editores 
+de páginas cambiar una página (por ejemplo, agregar o eliminar un elemento web),
+ pero los usuarios no pueden ver los cambios hasta que el editor esté satisfecho 
+con los cambios y las verificaciones en la página .
+
+
+Opción de registro para la cinta Project Online
+Project Online tiene opciones para guardar, cerrar y publicar en la cinta. 
+El check-in se activa al cerrar, pero eso lleva al usuario de vuelta a PWA Home.
+ Si el usuario ha desprotegido el proyecto y luego decide abrir el Plan localmente, 
+el usuario debe cerrarlo, registrarse y navegar de nuevo para volver a abrir el plan.
+ Sería más fácil si el check-in estuviera disponible como una opción en la cinta
+
+Los términos 'check in' y 'check out' se aplican a proyectos empresariales, 
+recursos empresariales y a la plantilla Global empresarial. 
+Un usuario debe verificar cualquiera de estos antes de editar, 
+para que otros tengan acceso de solo lectura, hasta que el usuario
+ los regrese nuevamente. El registro de salida se realiza por orden 
+de llegada, por lo que la primera persona que abre el proyecto para edición, revisa el proyecto.

@@ -9,13 +9,12 @@ using System.Security;
 
 class Program{
 
-        const string pwaPath = "https://ServerName/pwa"; //Change the path to your
-        const string userName = "LoginName@DomainName.com"; //PWA Username
-
+        const string pwaPath = "https://aigpanama.sharepoint.com/sites/Proyectos-TI"; //Change the path to your
+        const string userName = "mortega@innovacion.gob.pa"; //PWA Username
         const string passWord = "password"; //PWA Password
         static ProjectContext projectContext; //Initialize the ProjectContext Object
 
-        static void Main(string[] args)
+        static void principal()// Main(string[] args)
         {
                  projectContext = new ProjectContext(pwaPath);
                  SecureString securePassword = new SecureString();
@@ -43,8 +42,8 @@ class Program{
 
             ProjectCreationInformation newProj = new ProjectCreationInformation();
             newProj.Id = Guid.NewGuid();
-            newProj.Name = “Test Project";
-            newProj.Description = “This Project is created via CSOM";
+            newProj.Name = "Test Project";
+            newProj.Description = "This Project is created via CSOM";
             newProj.Start = DateTime.Today.Date;
             newProj.EnterpriseProjectTypeId = new Guid("09fa52b4-059b-4527-926e-99f9be96437a");
             PublishedProject newPublishedProj = projectContext.Projects.Add(newProj);
@@ -118,6 +117,7 @@ class Program{
             projectContext.ExecuteQuery();
             projectContext.Load(projectContext.CustomFields);//Load Custom Fields from PWA
             projectContext.ExecuteQuery();
+
             Guid ProjectGuid = new Guid("3531cb1f-51ce-4a27-a45a-590339b99aed");
             Guid TaskGuid = new Guid("56b0ba40-da78-e611-80cb-00155da4672c");
             Guid CustomFieldGuid = new Guid("3c3dfd8b-da78-e611-80cb-00155da4672c");
@@ -127,11 +127,11 @@ class Program{
             projectContext.ExecuteQuery();
             var taskToEdit = draftProject.Tasks.First(task => task.Id == TaskGuid);//Get the task to be updated, Here you can also use the property task.Name
             var CustomField = projectContext.CustomFields.First(CF => CF.Id == CustomFieldGuid);
-            var CustomFieldValue = “New Value";
+            var CustomFieldValue = "New Value";
             string internalName = CustomField.InternalName.ToString();//Get internal name of custom field
             taskToEdit[internalName] = CustomFieldValue;//Set custom field value
             draftProject.Publish(true);//Publish and Check-in the project
             projectContext.ExecuteQuery();
 
-}
+    }
 }
