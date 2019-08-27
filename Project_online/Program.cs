@@ -73,37 +73,51 @@ namespace Project_online
 
     class Program
     {
-        MySqlConnection connect = new MySqlConnection();
+
+        const string pwaPath = "https://aigpanama.sharepoint.com/sites/Proyectos-TI/";
+        const string userName = "mortega@innovacion.gob.pa";
+        const string passWord = "password";
+        static csom.ProjectContext ProjectCont1;
+        //MySqlConnection connect = new MySqlConnection();
         string exePath = System.Reflection.Assembly.GetEntryAssembly().Location;
 
 
         static void Main(string[] args)
         {
 
-            var classProject = new Project();
-            classProject.actualiza_tareas("DTR-2018005-AIG-KanbanMaestrodeProyecto", "Revisión por Legal", "2019-08-19","2019-08-21",10);
 
-       
+            //var classProject = new Project();
+            //classProject.actualiza_tareas("DTR-2018005-AIG-KanbanMaestrodeProyecto", "Revisión por Legal", "2019-08-19","2019-08-21",10);
+
+            Program connection = new Program();
+            connection.conn();
+            connection.actualiza_tareas("DTR-2018005-AIG-KanbanMaestrodeProyecto", "Revisión por Legal", "2019-08-19", "2019-08-21", 10);
 
         }
 
-  
+        private void conn() {
+
+            ProjectCont1 = new csom.ProjectContext(pwaPath);
+            SecureString securePassword = new SecureString();
+            foreach (char c in passWord.ToCharArray())
+            {
+                securePassword.AppendChar(c);
+            }
+            ProjectCont1.Credentials = new SharePointOnlineCredentials(userName, securePassword);
+            
+        }
 
 
-    public void actualiza_tareas( string np, string nt, string nnt )
+        public void  actualiza_tareas(string np, string nt, string fi, string ff, int pa2)
         {
-
-            using (csom.ProjectContext ProjectCont1 = new csom.ProjectContext("https://aigpanama.sharepoint.com/sites/Proyectos-TI/"))
+           
+            using(ProjectCont1)
             {
 
-                SecureString password = new SecureString();
-                foreach (char c in "Coco.1961".ToCharArray()) password.AppendChar(c);
 
-                ProjectCont1.Credentials = new SharePointOnlineCredentials("mortega@innovacion.gob.pa", password);
-         
                 var projCollection = ProjectCont1.LoadQuery(
-                ProjectCont1.Projects
-                 .Where(p => p.Name == np));
+                    ProjectCont1.Projects
+                     .Where(p => p.Name == np));
                 ProjectCont1.ExecuteQuery();
                 csom.PublishedProject proj2Edit = projCollection.First();
                 csom.DraftProject projCheckedOut = proj2Edit.CheckOut();
@@ -117,9 +131,9 @@ namespace Project_online
 
                         ProjectCont1.Load(Task.CustomFields);
                         ProjectCont1.ExecuteQuery();
-                        Task.Name = nnt;// txtTache.Text;
-                        Task.Start = DateTime.Today;
-                        Task.PercentComplete = 100;
+                        Task.ActualStart = Convert.ToDateTime(fi); //DateTime.Today;
+                        Task.ActualFinish = Convert.ToDateTime(ff);//DateTime.Today;
+                        Task.PercentComplete = pa2;
                         csom.AssignmentCreationInformation r = new csom.AssignmentCreationInformation();
                         r.Id = Guid.NewGuid();
                         r.TaskId = Task.Id;
@@ -130,10 +144,6 @@ namespace Project_online
                 csom.QueueJob qJob = ProjectCont1.Projects.Update();
                 csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 20);
             }
-
-
-
-
 
         }
     }
