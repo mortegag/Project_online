@@ -76,9 +76,9 @@ namespace Project_online
 
         const string pwaPath = "https://aigpanama.sharepoint.com/sites/Proyectos-TI/";
         const string userName = "mortega@innovacion.gob.pa";
-        const string passWord = "password";
+        const string passWord = "Coco.1961";
         static csom.ProjectContext ProjectCont1;
-        //MySqlConnection connect = new MySqlConnection();
+        MySqlConnection connect = new MySqlConnection();
         string exePath = System.Reflection.Assembly.GetEntryAssembly().Location;
 
 
@@ -91,7 +91,7 @@ namespace Project_online
 
             Program connection = new Program();
             connection.conn();
-            connection.actualiza_tareas("DTR-2018005-AIG-KanbanMaestrodeProyecto", "Revisión por Legal", "2019-08-19", "2019-08-21", 10);
+            connection.actualiza_tareas("DTR-2018005-AIG-KanbanMaestrodeProyecto", "Revisión por Legal", "2019-08-10", "2019-08-21", 11);
 
         }
 
@@ -108,6 +108,53 @@ namespace Project_online
         }
 
 
+        private void leerbd()
+        {
+
+            string ip = "10.252.70.131";
+            string user = "mortega";
+            string passw = "Panama2019";
+            string db ="AIGBD_SSEC";
+
+            try
+            {
+
+                string connectionString = "server=" + ip + ";uid=" + user + ";pwd=" + passw + " ;database=" + db + ";";
+                connect = new MySqlConnection(connectionString);
+                string sql = "select * from vista_proyectos";
+
+                if (connect.State != ConnectionState.Open)
+                {
+                    connect.Open();
+                }
+                using (MySqlDataAdapter da = new MySqlDataAdapter(sql, connect))
+                {
+
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    if (dt != null)
+                    {
+
+ 
+                        foreach (DataRow row in dt.Rows)
+                        {
+                 
+                        }
+
+              
+                    }
+                    connect.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+        }
+
+
         public void  actualiza_tareas(string np, string nt, string fi, string ff, int pa2)
         {
            
@@ -117,7 +164,7 @@ namespace Project_online
 
                 var projCollection = ProjectCont1.LoadQuery(
                     ProjectCont1.Projects
-                     .Where(p => p.Name == np));
+                     .Where(p => p.Name  == "" ));
                 ProjectCont1.ExecuteQuery();
                 csom.PublishedProject proj2Edit = projCollection.First();
                 csom.DraftProject projCheckedOut = proj2Edit.CheckOut();
@@ -133,6 +180,7 @@ namespace Project_online
                         ProjectCont1.ExecuteQuery();
                         Task.ActualStart = Convert.ToDateTime(fi); //DateTime.Today;
                         Task.ActualFinish = Convert.ToDateTime(ff);//DateTime.Today;
+                        Task.OutlineLevel = 1;
                         Task.PercentComplete = pa2;
                         csom.AssignmentCreationInformation r = new csom.AssignmentCreationInformation();
                         r.Id = Guid.NewGuid();
@@ -143,6 +191,10 @@ namespace Project_online
                 projCheckedOut.Publish(true);
                 csom.QueueJob qJob = ProjectCont1.Projects.Update();
                 csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 20);
+
+                projCheckedOut.CheckIn(true);
+
+        
             }
 
         }
