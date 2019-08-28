@@ -39,7 +39,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\Documents\SARH\RRHH\AccionesPersonal\AccionesPersonalWF\bin\MySql.Data.dll</HintPath>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

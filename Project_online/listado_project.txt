@@ -1,0 +1,1009 @@
+
+
+primera prueba  de llegada con GUI Proyecto y GUI Tarea:
+
+1. 5a32731f-a750-e911-ae73-34f39add815e   DTR-2018005-AIG-KanbanMaestrodeProyecto       03/27/2019 3:44:01 p.m.
+
+Task collection count: 285
+1. Id:ef32731f-a750-e911-ae73-34f39add815e      Name:Implementar y Puesta en Marcha.
+    Assignment collection count: 2
+         Assignments: Paulo Rodriguez, Rosemary Cerrud,
+
+
+
+1. 2f7e6899-d9c8-e911-b070-00155db42408   BONOS ALIMENTICIOS - SENAPAN  08/27/2019 2:47:50 p.m.
+
+Task collection count: 1
+0a0e6daa-d9c8-e911-b07b-00155db45101
+1. Id:0a0e6daa-d9c8-e911-b07b-00155db45101      Name:Avance
+    Assignment collection count: 0
+         Assignments: None
+
+2. 5a32731f-a750-e911-ae73-34f39add815e   DTR-2018005-AIG-KanbanMaestrodeProyecto       03/27/2019 3:44:01 p.m.
+
+Task collection count: 285
+1. Id:6932731f-a750-e911-ae73-34f39add815e      Name:Gestionar Documentación para el Soporte del SARH
+    Assignment collection count: 0
+         Assignments: None
+2. Id:5f32731f-a750-e911-ae73-34f39add815e      Name:Confeccionar TDR
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+3. Id:6032731f-a750-e911-ae73-34f39add815e      Name:Confeccionar Requisición
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+4. Id:6132731f-a750-e911-ae73-34f39add815e      Name:Confeccionar Modelo de Contrato
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+5. Id:6232731f-a750-e911-ae73-34f39add815e      Name:Firmar Requisición (Director/Tramitador)
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Joaquín Huertas,
+6. Id:6332731f-a750-e911-ae73-34f39add815e      Name:Revisión por Compras
+    Assignment collection count: 1
+         Assignments: Zulma Gonzalez,
+7. Id:6432731f-a750-e911-ae73-34f39add815e      Name:Revisión por Legal
+    Assignment collection count: 1
+         Assignments: Omar Arcia,
+8. Id:6532731f-a750-e911-ae73-34f39add815e      Name:Entrega de la Documentación a Compras
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+9. Id:6632731f-a750-e911-ae73-34f39add815e      Name:Reserva de la Partida
+    Assignment collection count: 2
+         Assignments: Guadalupe Franco, Javier Garrido,
+10. Id:6732731f-a750-e911-ae73-34f39add815e     Name:Firma del Administración y Finanzas
+    Assignment collection count: 1
+         Assignments: Ignacio Molino,
+11. Id:6832731f-a750-e911-ae73-34f39add815e     Name:Validación de la Oficina de Fiscalización
+    Assignment collection count: 1
+         Assignments: Javier Manning,
+12. Id:7d32731f-a750-e911-ae73-34f39add815e     Name:Publicación
+    Assignment collection count: 1
+         Assignments: Elsa Jaén,
+13. Id:7e32731f-a750-e911-ae73-34f39add815e     Name:Apertura de Sobre
+    Assignment collection count: 1
+         Assignments: Zulma Gonzalez,
+14. Id:7f32731f-a750-e911-ae73-34f39add815e     Name:Resolución de Comisión Verificadora
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Teresa Berbey,
+15. Id:8032731f-a750-e911-ae73-34f39add815e     Name:Emitir Resultado de Comisión Verificadora
+    Assignment collection count: 0
+         Assignments: None
+16. Id:8132731f-a750-e911-ae73-34f39add815e     Name:Confección del Contrato
+    Assignment collection count: 1
+         Assignments: Teresa Berbey,
+17. Id:8332731f-a750-e911-ae73-34f39add815e     Name:Refrendo de la CGRP
+    Assignment collection count: 1
+         Assignments: Javier Manning,
+18. Id:8232731f-a750-e911-ae73-34f39add815e     Name:Orden de Proceder
+    Assignment collection count: 1
+         Assignments: Zulma Gonzalez,
+19. Id:5e32731f-a750-e911-ae73-34f39add815e     Name:Manejar Proyectos con Ms Project - Kanban
+    Assignment collection count: 0
+         Assignments: None
+20. Id:6a32731f-a750-e911-ae73-34f39add815e     Name:Investigar con Ms-Project
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+21. Id:6b32731f-a750-e911-ae73-34f39add815e     Name:Incorporar proyectos y actividades
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+22. Id:6c32731f-a750-e911-ae73-34f39add815e     Name:Firmas Electrónica para SIRCEL
+    Assignment collection count: 0
+         Assignments: None
+23. Id:6d32731f-a750-e911-ae73-34f39add815e     Name:Confección Procedimiento Electrónico
+    Assignment collection count: 1
+         Assignments: Gisela González,
+24. Id:6e32731f-a750-e911-ae73-34f39add815e     Name:Revisión Procedimiento Electrónico
+    Assignment collection count: 2
+         Assignments: Gisela González, Javier Garrido,
+25. Id:6f32731f-a750-e911-ae73-34f39add815e     Name:Aprobación Procedimiento Electrónico
+    Assignment collection count: 1
+         Assignments: Irvin Halman,
+26. Id:b132731f-a750-e911-ae73-34f39add815e     Name:Validación final del Proceso con los actores del Proceso
+    Assignment collection count: 8
+         Assignments: Gisela González, Ignacio Molino, Irvin Halman, Javier Garrido, Javier Manning, Lizbeth Fossatti, Mario Calvit, Olga Olivares,
+27. Id:ae32731f-a750-e911-ae73-34f39add815e     Name:Verificación por La Oficina de Legal
+    Assignment collection count: 2
+         Assignments: Irvin Halman, Teresa Berbey,
+28. Id:af32731f-a750-e911-ae73-34f39add815e     Name:Firma de la Administración General
+    Assignment collection count: 1
+         Assignments: Irvin Halman,
+29. Id:b532731f-a750-e911-ae73-34f39add815e     Name:Ajustes al formato de Viático según Gaceta Oficial
+    Assignment collection count: 0
+         Assignments: None
+30. Id:b632731f-a750-e911-ae73-34f39add815e     Name:Análisis del Requerimiento
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Juan Medina,
+31. Id:b732731f-a750-e911-ae73-34f39add815e     Name:Desarrollar los ajustes
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+32. Id:b832731f-a750-e911-ae73-34f39add815e     Name:Calidad del Desarrollo
+    Assignment collection count: 2
+         Assignments: Lizbeth Fossatti, Paulo Rodriguez,
+33. Id:b932731f-a750-e911-ae73-34f39add815e     Name:Pase al Ambiente de Producción - Implementación
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+34. Id:b032731f-a750-e911-ae73-34f39add815e     Name:Divulgación y Capacitación
+    Assignment collection count: 0
+         Assignments: None
+35. Id:b232731f-a750-e911-ae73-34f39add815e     Name:Subir Procedimiento al Portal INNOVAMe
+    Assignment collection count: 2
+         Assignments: Gisela González, Juan Martinez,
+36. Id:b332731f-a750-e911-ae73-34f39add815e     Name:Capacitación al Personal de Negocio
+    Assignment collection count: 2
+         Assignments: Gisela González, Javier Garrido,
+37. Id:b432731f-a750-e911-ae73-34f39add815e     Name:Capacitación a Enlaces Administrativos
+    Assignment collection count: 2
+         Assignments: Gisela González, Mario Calvit,
+38. Id:7032731f-a750-e911-ae73-34f39add815e     Name:Reglas Generales para el Centro de Proyecto
+    Assignment collection count: 0
+         Assignments: None
+39. Id:7132731f-a750-e911-ae73-34f39add815e     Name:Confeccionar Reglas
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+40. Id:7232731f-a750-e911-ae73-34f39add815e     Name:Transmitir y Discutirlas con PM de la Oficina del BID
+    Assignment collection count: 3
+         Assignments: Javier Garrido, Juan Martinez, Sofia Chen,
+41. Id:7332731f-a750-e911-ae73-34f39add815e     Name:Informar a la Administración General, TI, BID
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+42. Id:7432731f-a750-e911-ae73-34f39add815e     Name:Desarrollar e Implementar Sistema de Visitas para la AIG
+    Assignment collection count: 0
+         Assignments: None
+43. Id:8732731f-a750-e911-ae73-34f39add815e     Name:Implementación de Panel Administrativo (CMS)
+    Assignment collection count: 0
+         Assignments: None
+44. Id:8832731f-a750-e911-ae73-34f39add815e     Name:Instalación y Ajuste(Desarrollo) del sistema de CMS
+    Assignment collection count: 1
+         Assignments: Raúl Swanston,
+45. Id:8932731f-a750-e911-ae73-34f39add815e     Name:Ajuste del Front-End al diseño estandar de la AIG
+    Assignment collection count: 1
+         Assignments: Raúl Swanston,
+46. Id:8a32731f-a750-e911-ae73-34f39add815e     Name:Ajuste del Back-End al diseño estandar de la AIG
+    Assignment collection count: 1
+         Assignments: Raúl Swanston,
+47. Id:8532731f-a750-e911-ae73-34f39add815e     Name:Ajuste de la base de datos a las necesidades en prioridad
+    Assignment collection count: 1
+         Assignments: Raúl Swanston,
+48. Id:8632731f-a750-e911-ae73-34f39add815e     Name:Implementación de Comportamiento Auto-Ajustable (Responsive)
+    Assignment collection count: 0
+         Assignments: None
+49. Id:8432731f-a750-e911-ae73-34f39add815e     Name:Ajustes a media-query para pantallas de dispositivos móviles
+    Assignment collection count: 1
+         Assignments: Raúl Swanston,
+50. Id:8c32731f-a750-e911-ae73-34f39add815e     Name:Adición de la sección de recepcionista virtual
+    Assignment collection count: 0
+         Assignments: None
+51. Id:8d32731f-a750-e911-ae73-34f39add815e     Name:Desarrollo de vistas
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+52. Id:8e32731f-a750-e911-ae73-34f39add815e     Name:Conexión con base de datos
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+53. Id:8b32731f-a750-e911-ae73-34f39add815e     Name:Configuración en el Servidor
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+54. Id:d532731f-a750-e911-ae73-34f39add815e     Name:Calidad
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+55. Id:d332731f-a750-e911-ae73-34f39add815e     Name:Capacitación
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+56. Id:d432731f-a750-e911-ae73-34f39add815e     Name:Puesta en Producción
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+57. Id:9332731f-a750-e911-ae73-34f39add815e     Name:Desarrollo para Registro de Asistencia para el Congreso Médico 2018 - Regional de San Miguelito - MINSA utilizando QR
+    Assignment collection count: 0
+         Assignments: None
+58. Id:9432731f-a750-e911-ae73-34f39add815e     Name:Reunión de Inicio de Proyecto
+    Assignment collection count: 4
+         Assignments: EXTERNO, Javier Garrido, Juan Martinez, Mitchell Barraza,
+59. Id:9532731f-a750-e911-ae73-34f39add815e     Name:Análisis de Requerimientos
+    Assignment collection count: 0
+         Assignments: None
+60. Id:9632731f-a750-e911-ae73-34f39add815e     Name:Analizar Requerimientos
+    Assignment collection count: 3
+         Assignments: EXTERNO, Javier Garrido, Juan Martinez,
+61. Id:9732731f-a750-e911-ae73-34f39add815e     Name:Listar Requerimientos
+    Assignment collection count: 3
+         Assignments: EXTERNO, Javier Garrido, Juan Martinez,
+62. Id:9832731f-a750-e911-ae73-34f39add815e     Name:Solicitud de Equipos
+    Assignment collection count: 0
+         Assignments: None
+63. Id:9932731f-a750-e911-ae73-34f39add815e     Name:Adquirir Equipos
+    Assignment collection count: 3
+         Assignments: Javier Garrido, Juan Martinez, Nube Computacional,
+64. Id:9a32731f-a750-e911-ae73-34f39add815e     Name:Configurar Equipos
+    Assignment collection count: 2
+         Assignments: Juan Martinez, Raúl Swanston,
+65. Id:9b32731f-a750-e911-ae73-34f39add815e     Name:Desarrollo
+    Assignment collection count: 0
+         Assignments: None
+66. Id:9c32731f-a750-e911-ae73-34f39add815e     Name:Hacer pruebas con Herramientas existentes
+    Assignment collection count: 2
+         Assignments: Juan Martinez, Raúl Swanston,
+67. Id:a532731f-a750-e911-ae73-34f39add815e     Name:Migrar información de Asistentes
+    Assignment collection count: 2
+         Assignments: EXTERNO, Juan Martinez,
+68. Id:a432731f-a750-e911-ae73-34f39add815e     Name:Desarrollar funcionalidades faltantes
+    Assignment collection count: 2
+         Assignments: Juan Martinez, Raúl Swanston,
+69. Id:a632731f-a750-e911-ae73-34f39add815e     Name:Solicitud y Asignación de Ip Publica
+    Assignment collection count: 2
+         Assignments: Edurne Castillo, Juan Martinez,
+70. Id:a232731f-a750-e911-ae73-34f39add815e     Name:Pruebas de Calidad y Mejoras
+    Assignment collection count: 0
+         Assignments: None
+71. Id:a332731f-a750-e911-ae73-34f39add815e     Name:Pruebas de Calidad Funcional y Técnica
+    Assignment collection count: 2
+         Assignments: EXTERNO, Juan Martinez,
+72. Id:9d32731f-a750-e911-ae73-34f39add815e     Name:Implementación
+    Assignment collection count: 0
+         Assignments: None
+73. Id:9e32731f-a750-e911-ae73-34f39add815e     Name:Puesta en ambiente Productivo
+    Assignment collection count: 3
+         Assignments: EXTERNO, Javier Garrido, Juan Martinez,
+74. Id:9f32731f-a750-e911-ae73-34f39add815e     Name:Capacitación
+    Assignment collection count: 0
+         Assignments: None
+75. Id:a132731f-a750-e911-ae73-34f39add815e     Name:Capacitación de Uso de la Herramienta
+    Assignment collection count: 2
+         Assignments: Juan Martinez, Raúl Swanston,
+76. Id:a732731f-a750-e911-ae73-34f39add815e     Name:Cierre de Proyecto
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Juan Martinez,
+77. Id:7732731f-a750-e911-ae73-34f39add815e     Name:Creación de Página Web Colaborativa de Gobierno Abierto Panamá para ANTAI
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+78. Id:7a32731f-a750-e911-ae73-34f39add815e     Name:Creación y Migración de Página Web para el 311 con Secciones Colaborativas
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+79. Id:7b32731f-a750-e911-ae73-34f39add815e     Name:Crear y Migrar el Portal de Datos Abiertos
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+80. Id:7c32731f-a750-e911-ae73-34f39add815e     Name:Implementar un Centro de Proyectos y Cuadro de Mandos de Seguimiento
+    Assignment collection count: 3
+         Assignments: Javier Garrido, Juan Martinez, Sofia Chen,
+81. Id:9232731f-a750-e911-ae73-34f39add815e     Name:Contratar Servicio de Alarma de Seguridad Institucional
+    Assignment collection count: 4
+         Assignments: Carlos Burgos, Ignacio Molino, Javier Garrido, Malony Edman,
+82. Id:a032731f-a750-e911-ae73-34f39add815e     Name:Propuestas para la Contratación del Servicio para Cambios en Equipo y Sistema de Marcación
+    Assignment collection count: 0
+         Assignments: None
+83. Id:ab32731f-a750-e911-ae73-34f39add815e     Name:Identificar Usuarios Finales
+    Assignment collection count: 1
+         Assignments: Carlos Burgos,
+84. Id:ac32731f-a750-e911-ae73-34f39add815e     Name:Levantar Requerimientos Técnicos
+    Assignment collection count: 3
+         Assignments: Carlos Burgos, Javier Garrido, Lidia Serrano,
+85. Id:ad32731f-a750-e911-ae73-34f39add815e     Name:Levantar Requerimientos Operativos
+    Assignment collection count: 3
+         Assignments: Carlos Burgos, Javier Garrido, Lidia Serrano,
+86. Id:a932731f-a750-e911-ae73-34f39add815e     Name:Levantar Requerimientos Funcionales
+    Assignment collection count: 3
+         Assignments: Carlos Burgos, Javier Garrido, Lidia Serrano,
+87. Id:aa32731f-a750-e911-ae73-34f39add815e     Name:Incorporar a la OIRH
+    Assignment collection count: 0
+         Assignments: None
+88. Id:a832731f-a750-e911-ae73-34f39add815e     Name:Complementar Requerimientos Funcionales
+    Assignment collection count: 4
+         Assignments: Carlos Burgos, Isamar Rodriguez, Maria Ureña, Thays Zorrilla,
+89. Id:ba32731f-a750-e911-ae73-34f39add815e     Name:Informar cambio en el manejo del negocio con la nueva solución
+    Assignment collection count: 4
+         Assignments: Carlos Burgos, Isamar Rodriguez, Maria Ureña, Thays Zorrilla,
+90. Id:bb32731f-a750-e911-ae73-34f39add815e     Name:Acuerdo de Expectativas
+    Assignment collection count: 5
+         Assignments: Carlos Burgos, Isamar Rodriguez, Javier Garrido, Maria Ureña, Thays Zorrilla,
+91. Id:bc32731f-a750-e911-ae73-34f39add815e     Name:Solicitud de Propuesta
+    Assignment collection count: 0
+         Assignments: None
+92. Id:bf32731f-a750-e911-ae73-34f39add815e     Name:Contactar proveedores
+    Assignment collection count: 1
+         Assignments: Carlos Burgos,
+93. Id:be32731f-a750-e911-ae73-34f39add815e     Name:Recibir Propuestas
+    Assignment collection count: 1
+         Assignments: Carlos Burgos,
+94. Id:bd32731f-a750-e911-ae73-34f39add815e     Name:Informe final con cuadro resumen de Propuesta
+    Assignment collection count: 1
+         Assignments: Carlos Burgos,
+95. Id:d032731f-a750-e911-ae73-34f39add815e     Name:Cambiar Equipos de Cámara y Acceso para SAR, Balboa y ITI
+    Assignment collection count: 0
+         Assignments: None
+96. Id:cf32731f-a750-e911-ae73-34f39add815e     Name:Levantar Requerimiento
+    Assignment collection count: 3
+         Assignments: Franklin Bernal, Juan Martinez, Malony Edman,
+97. Id:d132731f-a750-e911-ae73-34f39add815e     Name:Solicitud de Propuestas
+    Assignment collection count: 3
+         Assignments: Franklin Bernal, Juan Martinez, Malony Edman,
+98. Id:d232731f-a750-e911-ae73-34f39add815e     Name:Adquisición del Bien o Servicio
+    Assignment collection count: 1
+         Assignments: Zulma Gonzalez,
+99. Id:d632731f-a750-e911-ae73-34f39add815e     Name:Actualizción del Directorio Activo con Información del Sistema de Acciones de RH.
+    Assignment collection count: 0
+         Assignments: None
+100. Id:d732731f-a750-e911-ae73-34f39add815e    Name:Análsis de la Situación actual
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+101. Id:d832731f-a750-e911-ae73-34f39add815e    Name:Ejecución de la Solución
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+102. Id:d932731f-a750-e911-ae73-34f39add815e    Name:Ajustes a la infraestructura
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+103. Id:da32731f-a750-e911-ae73-34f39add815e    Name:Pruebas
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+104. Id:db32731f-a750-e911-ae73-34f39add815e    Name:Implementación y Puesta en marcha
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+105. Id:dc32731f-a750-e911-ae73-34f39add815e    Name:Cuadro de Mando para la RNI
+    Assignment collection count: 0
+         Assignments: None
+106. Id:de32731f-a750-e911-ae73-34f39add815e    Name:Analisis de Datos
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+107. Id:df32731f-a750-e911-ae73-34f39add815e    Name:Diseño de Cuadros de Mando
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+108. Id:e032731f-a750-e911-ae73-34f39add815e    Name:Integración de la Información
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+109. Id:e132731f-a750-e911-ae73-34f39add815e    Name:Crear Cuadro de Mando.
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+110. Id:e232731f-a750-e911-ae73-34f39add815e    Name:Pruebas.
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Judy Rivas,
+111. Id:e332731f-a750-e911-ae73-34f39add815e    Name:Implementación y Puesta en Producción
+    Assignment collection count: 3
+         Assignments: Javier Garrido, Juan Martinez, Judy Rivas,
+112. Id:dd32731f-a750-e911-ae73-34f39add815e    Name:Cuadro de Mando Para el ITI
+    Assignment collection count: 0
+         Assignments: None
+113. Id:e432731f-a750-e911-ae73-34f39add815e    Name:Analisis de Datos
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+114. Id:e532731f-a750-e911-ae73-34f39add815e    Name:Diseño de Cuadros de Mando
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+115. Id:e632731f-a750-e911-ae73-34f39add815e    Name:Integración de la Información
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+116. Id:e732731f-a750-e911-ae73-34f39add815e    Name:Crear Cuadro de Mando.
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+117. Id:e832731f-a750-e911-ae73-34f39add815e    Name:Pruebas.
+    Assignment collection count: 2
+         Assignments: Edwin Henriquez, Javier Garrido,
+118. Id:e932731f-a750-e911-ae73-34f39add815e    Name:Implementación y Puesta en Producción
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Juan Martinez,
+119. Id:f532731f-a750-e911-ae73-34f39add815e    Name:Confeccionar e Implementar Cuadro de Mando para el Sistema de Visitas AIG
+    Assignment collection count: 0
+         Assignments: None
+120. Id:fd32731f-a750-e911-ae73-34f39add815e    Name:Solicitud y Conexión a la base de datos de Producción
+    Assignment collection count: 2
+         Assignments: BD Consultor, Javier Garrido,
+121. Id:f632731f-a750-e911-ae73-34f39add815e    Name:Análisis de Datos
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+122. Id:f732731f-a750-e911-ae73-34f39add815e    Name:Diseño de Cuadros de Mando
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+123. Id:fc32731f-a750-e911-ae73-34f39add815e    Name:Investigar forma de conexión de Power BI con MySQL
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+124. Id:f832731f-a750-e911-ae73-34f39add815e    Name:Integración y Transformación de la Información
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+125. Id:f932731f-a750-e911-ae73-34f39add815e    Name:Crear Cuadro de Mando.
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+126. Id:fa32731f-a750-e911-ae73-34f39add815e    Name:Pruebas
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+127. Id:fb32731f-a750-e911-ae73-34f39add815e    Name:Implementación y Puesta en Producción
+    Assignment collection count: 3
+         Assignments: Javier Garrido, Juan Martinez, Tatiana Cole,
+128. Id:ea32731f-a750-e911-ae73-34f39add815e    Name:Confeccionar Página Web Para la Red Geal Panamá
+    Assignment collection count: 0
+         Assignments: None
+129. Id:eb32731f-a750-e911-ae73-34f39add815e    Name:Levantamiento de Requerimientos
+    Assignment collection count: 3
+         Assignments: Javier Garrido, Paulo Rodriguez, Rosemary Cerrud,
+130. Id:ec32731f-a750-e911-ae73-34f39add815e    Name:Diseño de la Página
+    Assignment collection count: 3
+         Assignments: Mitchell Barraza, Paulo Rodriguez, Rosemary Cerrud,
+131. Id:ed32731f-a750-e911-ae73-34f39add815e    Name:Desarrollo de la Página
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+132. Id:ee32731f-a750-e911-ae73-34f39add815e    Name:Pruebas.
+    Assignment collection count: 3
+         Assignments: Mitchell Barraza, Paulo Rodriguez, Rosemary Cerrud,
+133. Id:ef32731f-a750-e911-ae73-34f39add815e    Name:Implementar y Puesta en Marcha.
+    Assignment collection count: 2
+         Assignments: Paulo Rodriguez, Rosemary Cerrud,
+134. Id:7532731f-a750-e911-ae73-34f39add815e    Name:SARH - Comparar las Marcaciones con las Acciones de Personal
+    Assignment collection count: 3
+         Assignments: Javier Garrido, Moisés Ortega, Thays Zorrilla,
+135. Id:7632731f-a750-e911-ae73-34f39add815e    Name:El Reembolso de Caja Menuda no Cuadra, hay que incorporar a dos colaboradores externos
+    Assignment collection count: 3
+         Assignments: Javier Garrido, Lucinda Beitia, Mary Consultora,
+136. Id:f032731f-a750-e911-ae73-34f39add815e    Name:Ajustes al SIRCEL Basado en la Resolución 82 del procedimiento de Viático
+    Assignment collection count: 0
+         Assignments: None
+137. Id:f132731f-a750-e911-ae73-34f39add815e    Name:Ajustar Proceso de Viático Nacional
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+138. Id:fe32731f-a750-e911-ae73-34f39add815e    Name:Ajustar el Diseño del Formulario de Viático según formato de la CGR
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+139. Id:ff32731f-a750-e911-ae73-34f39add815e    Name:Ajustar el Proceso
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+140. Id:0233731f-a750-e911-ae73-34f39add815e    Name:Poner los Cambios en Calidad
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+141. Id:0033731f-a750-e911-ae73-34f39add815e    Name:Hacer Pruebas de Calidad
+    Assignment collection count: 1
+         Assignments: Lizbeth Fossatti,
+142. Id:0133731f-a750-e911-ae73-34f39add815e    Name:Poner los cambios en Producción
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+143. Id:f232731f-a750-e911-ae73-34f39add815e    Name:Ajustar Proceso de Pago por Jornadas Extraordinarias
+    Assignment collection count: 0
+         Assignments: None
+144. Id:8f32731f-a750-e911-ae73-34f39add815e    Name:Incorporar a SIRCEL el Cálculo de Pago en Forma Electrónica
+    Assignment collection count: 1
+         Assignments: Carlos Guerrero,
+145. Id:0633731f-a750-e911-ae73-34f39add815e    Name:Ajustar el Proceso
+    Assignment collection count: 1
+         Assignments: Carlos Guerrero,
+146. Id:0333731f-a750-e911-ae73-34f39add815e    Name:Poner los Cambios en Calidad
+    Assignment collection count: 1
+         Assignments: Carlos Guerrero,
+147. Id:0433731f-a750-e911-ae73-34f39add815e    Name:Hacer Pruebas de Calidad
+    Assignment collection count: 1
+         Assignments: Lizbeth Fossatti,
+148. Id:0533731f-a750-e911-ae73-34f39add815e    Name:Poner Cambios en Producción
+    Assignment collection count: 1
+         Assignments: Carlos Guerrero,
+149. Id:9032731f-a750-e911-ae73-34f39add815e    Name:Incorporar a SIRCEL Plantilla de Transporte para Viáticos Nacionales en Forma Electrónica
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+150. Id:f432731f-a750-e911-ae73-34f39add815e    Name:Desarrollar el Cálculo de Pago en Forma Electrónica
+    Assignment collection count: 1
+         Assignments: Carlos Guerrero,
+151. Id:f332731f-a750-e911-ae73-34f39add815e    Name:Poner los Cambios en Calidad
+    Assignment collection count: 2
+         Assignments: BD Consultor, Paulo Rodriguez,
+152. Id:0733731f-a750-e911-ae73-34f39add815e    Name:Hacer Pruebas de Calidad
+    Assignment collection count: 1
+         Assignments: Lizbeth Fossatti,
+153. Id:0833731f-a750-e911-ae73-34f39add815e    Name:Poner Cambios en Producción
+    Assignment collection count: 2
+         Assignments: BD Consultor, Paulo Rodriguez,
+154. Id:9132731f-a750-e911-ae73-34f39add815e    Name:Valirdar en SIRCEL los nombres de Archivos antes que se guarden en el Storage
+    Assignment collection count: 1
+         Assignments: Juan Medina,
+155. Id:c032731f-a750-e911-ae73-34f39add815e    Name:Ajustes al Cuadro de Mando del Centro de Proyectos V1.4
+    Assignment collection count: 0
+         Assignments: None
+156. Id:c732731f-a750-e911-ae73-34f39add815e    Name:Ajustes al Portafolio de Proyectos
+    Assignment collection count: 0
+         Assignments: None
+157. Id:c832731f-a750-e911-ae73-34f39add815e    Name:Agregar Etiqueta de Versión
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+158. Id:c932731f-a750-e911-ae73-34f39add815e    Name:Filtro por KPI de Estatus
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+159. Id:ca32731f-a750-e911-ae73-34f39add815e    Name:Ajuste al Tamaño de letra del Combo de Dirección
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+160. Id:cb32731f-a750-e911-ae73-34f39add815e    Name:Agregar Combo de Filtro de Agrupador de Proyecto
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+161. Id:cc32731f-a750-e911-ae73-34f39add815e    Name:Agregar Combo de Filtro de Compromiso
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+162. Id:cd32731f-a750-e911-ae73-34f39add815e    Name:Agregar Filtro por Proyectos no Terminado
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+163. Id:c132731f-a750-e911-ae73-34f39add815e    Name:Confeccionar CM Por agrupador de Proyecto, Compromiso, Fuente Financiamiento e Hito de Pago
+    Assignment collection count: 0
+         Assignments: None
+164. Id:c232731f-a750-e911-ae73-34f39add815e    Name:Diseño del Sitio
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+165. Id:c332731f-a750-e911-ae73-34f39add815e    Name:Desarrollar del Cuadro de Mando
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+166. Id:c432731f-a750-e911-ae73-34f39add815e    Name:Pruebas de Calidad
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+167. Id:c532731f-a750-e911-ae73-34f39add815e    Name:Implementación
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+168. Id:c632731f-a750-e911-ae73-34f39add815e    Name:Divulgación
+    Assignment collection count: 0
+         Assignments: None
+169. Id:ce32731f-a750-e911-ae73-34f39add815e    Name:Enviar correo con los ajuste
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+170. Id:7832731f-a750-e911-ae73-34f39add815e    Name:Getión de Calidad SINMA 2.0
+    Assignment collection count: 4
+         Assignments: BD Consultor, Javier Garrido, Lidia Serrano, Paulo Rodriguez,
+171. Id:7932731f-a750-e911-ae73-34f39add815e    Name:Gestión de Calidad SINMA 2.0 revisión 2
+    Assignment collection count: 3
+         Assignments: BD Consultor, Javier Garrido, Paulo Rodriguez,
+172. Id:0933731f-a750-e911-ae73-34f39add815e    Name:Crear un nuevo Portal del Directorio Teléfonico.
+    Assignment collection count: 0
+         Assignments: None
+173. Id:0a33731f-a750-e911-ae73-34f39add815e    Name:Levantar Requerimiento
+    Assignment collection count: 4
+         Assignments: Edgar Tejada, Geraldine Santander, Juan Martinez, Paulo Rodriguez,
+174. Id:0b33731f-a750-e911-ae73-34f39add815e    Name:Desarrollar Requerimientos
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+175. Id:0c33731f-a750-e911-ae73-34f39add815e    Name:Revisar Funcionalidades
+    Assignment collection count: 5
+         Assignments: Edgar Tejada, Geraldine Santander, Javier Garrido, Juan Martinez, Paulo Rodriguez,
+176. Id:0e33731f-a750-e911-ae73-34f39add815e    Name:Hacer Ajustes
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+177. Id:0d33731f-a750-e911-ae73-34f39add815e    Name:Lanzamiento en Producccion
+    Assignment collection count: 4
+         Assignments: Edgar Tejada, Geraldine Santander, Juan Martinez, Paulo Rodriguez,
+178. Id:0f33731f-a750-e911-ae73-34f39add815e    Name:Cuadro de Mando para Recursos Humanos
+    Assignment collection count: 0
+         Assignments: None
+179. Id:1033731f-a750-e911-ae73-34f39add815e    Name:Analisis de Datos
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+180. Id:1133731f-a750-e911-ae73-34f39add815e    Name:Diseño de Cuadros de Mando
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+181. Id:1233731f-a750-e911-ae73-34f39add815e    Name:Integración de la Información
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+182. Id:1333731f-a750-e911-ae73-34f39add815e    Name:Crear Cuadro de Mando.
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+183. Id:1433731f-a750-e911-ae73-34f39add815e    Name:Pruebas.
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+184. Id:1533731f-a750-e911-ae73-34f39add815e    Name:Implementación y Puesta en Producción
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+185. Id:1633731f-a750-e911-ae73-34f39add815e    Name:Implementar y Adecuar cuadro de mando del ITI en la Página Web de AIG
+    Assignment collection count: 0
+         Assignments: None
+186. Id:1733731f-a750-e911-ae73-34f39add815e    Name:Reunión de Inicio de Proyecto
+    Assignment collection count: 4
+         Assignments: Javier Garrido, Juan Barnes, Juan Martinez, Paulo Rodriguez,
+187. Id:1833731f-a750-e911-ae73-34f39add815e    Name:Elaborar Plantillas de Actualización de Información
+    Assignment collection count: 0
+         Assignments: None
+188. Id:1933731f-a750-e911-ae73-34f39add815e    Name:Solicitar Plantillas utilizadas para la control de la Información en el ITI
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+189. Id:1a33731f-a750-e911-ae73-34f39add815e    Name:Confección de Plantilla con información unificada
+    Assignment collection count: 1
+         Assignments: Juan Barnes,
+190. Id:1b33731f-a750-e911-ae73-34f39add815e    Name:Unificar información de las Plantillas con la generada en el BI
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+191. Id:1c33731f-a750-e911-ae73-34f39add815e    Name:Procedimiento de actualización de la Información
+    Assignment collection count: 0
+         Assignments: None
+192. Id:1d33731f-a750-e911-ae73-34f39add815e    Name:Analisis de la generación de estadística actuales en la página de transparencia vr lo que se quiere implementar
+    Assignment collection count: 5
+         Assignments: Antonia Vergara, Gabriel Reyes, Juan Barnes, Juan Medina, Paulo Rodriguez,
+193. Id:1e33731f-a750-e911-ae73-34f39add815e    Name:Confeccionar una Hoja de Excel con toda la información requerida de forma parametrica
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+194. Id:1f33731f-a750-e911-ae73-34f39add815e    Name:Presentar Hoja de Excel para la captura de la información
+    Assignment collection count: 5
+         Assignments: Antonia Vergara, Caridad de León, Javier Garrido, Juan Martinez, Paulo Rodriguez,
+195. Id:2033731f-a750-e911-ae73-34f39add815e    Name:Pruebas de Actualización de la Información e Integración con el BI
+    Assignment collection count: 0
+         Assignments: None
+196. Id:2133731f-a750-e911-ae73-34f39add815e    Name:Integrar el nuevo formato de datos con el BI
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+197. Id:2233731f-a750-e911-ae73-34f39add815e    Name:Hacer cambios en el cuadro de mando según la información anexada
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+198. Id:2333731f-a750-e911-ae73-34f39add815e    Name:Hacer pruebas de Despliegue de información en el BI
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+199. Id:2433731f-a750-e911-ae73-34f39add815e    Name:Desplegar BI en la Página de Innovación
+    Assignment collection count: 0
+         Assignments: None
+200. Id:2533731f-a750-e911-ae73-34f39add815e    Name:Crear marco en la página de Innovación
+    Assignment collection count: 6
+         Assignments: Caridad de León, Gabriel Reyes, Javier Garrido, Juan Barnes, Juan Martinez, Paulo Rodriguez,
+201. Id:2633731f-a750-e911-ae73-34f39add815e    Name:Generar url del BI
+    Assignment collection count: 0
+         Assignments: None
+202. Id:2733731f-a750-e911-ae73-34f39add815e    Name:Despliegue
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+203. Id:f2c063e5-b450-e911-ae73-34f39add815e    Name:Cierre de Proyecto
+    Assignment collection count: 3
+         Assignments: Antonia Vergara, Caridad de León, Javier Garrido,
+204. Id:f4c063e5-b450-e911-ae73-34f39add815e    Name:Informar puesta en producción del Tablero de Mando
+    Assignment collection count: 2
+         Assignments: Antonia Vergara, Caridad de León,
+205. Id:3833731f-a750-e911-ae73-34f39add815e    Name:Página Web Para la Nube Computacional
+    Assignment collection count: 0
+         Assignments: None
+206. Id:2d33731f-a750-e911-ae73-34f39add815e    Name:Integrar SIRCEL con el Directorio Activo
+    Assignment collection count: 0
+         Assignments: None
+207. Id:3033731f-a750-e911-ae73-34f39add815e    Name:Modificar el Portal del Directorio Teléfonico en la parte de la actualización de la Información
+    Assignment collection count: 0
+         Assignments: None
+208. Id:3133731f-a750-e911-ae73-34f39add815e    Name:Página Web Para la AIG
+    Assignment collection count: 0
+         Assignments: None
+209. Id:3533731f-a750-e911-ae73-34f39add815e    Name:Desarrollar e Implementar Sistema para Gestión de Pago de Contratos TI.
+    Assignment collection count: 2
+         Assignments: Juan Martinez, Paulo Rodriguez,
+210. Id:3633731f-a750-e911-ae73-34f39add815e    Name:Sistema de Jefe Encargado
+    Assignment collection count: 0
+         Assignments: None
+211. Id:3733731f-a750-e911-ae73-34f39add815e    Name:Automatización del Proceso de Entrega de Activos
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+212. Id:ffff2e97-cea7-e911-aedd-34f39add815e    Name:Automatización del Proceso para llevar equipos fuera de oficina
+    Assignment collection count: 0
+         Assignments: None
+213. Id:0a7457dc-bb50-e911-ae73-34f39add815e    Name:Desarrollar Sistema para el Seguimiento y Control de Cursos en el ITI e Integración con BI
+    Assignment collection count: 0
+         Assignments: None
+214. Id:4b2b6ca5-6951-e911-ae74-34f39add815e    Name:Inicio
+    Assignment collection count: 0
+         Assignments: None
+215. Id:c12b6ca5-6951-e911-ae74-34f39add815e    Name:Informar via Email el Inicio de Proyecto
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+216. Id:f3ed4b46-6a51-e911-ae74-34f39add815e    Name:Listar Alcanzable General de Proyecto
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+217. Id:875d50d4-6951-e911-ae74-34f39add815e    Name:Informar via Email alcansable general del proyecto
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+218. Id:453243ad-bc50-e911-ae73-34f39add815e    Name:Análisis y Evaluación de requerimientos
+    Assignment collection count: 0
+         Assignments: None
+219. Id:89420d09-cf50-e911-ae73-34f39add815e    Name:Detalle de Funcionalidades
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+220. Id:7947b992-d050-e911-ae73-34f39add815e    Name:Listado de Objetos de Base de datos para la Lógica de Negocio
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+221. Id:44ac71ba-2252-e911-ae75-34f39add815e    Name:Reunión Con los Desarrolladores para unificar criterios de Requerimientos
+    Assignment collection count: 3
+         Assignments: Javier Garrido, Juan Martinez, Paulo Rodriguez,
+222. Id:342bb3dd-ce50-e911-ae73-34f39add815e    Name:Diseño
+    Assignment collection count: 0
+         Assignments: None
+223. Id:750e68d3-cf50-e911-ae73-34f39add815e    Name:Modelo de base de datos
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+224. Id:86f354aa-d050-e911-ae73-34f39add815e    Name:Modelo del Front a utilizar
+    Assignment collection count: 3
+         Assignments: Javier Garrido, Juan Martinez, Paulo Rodriguez,
+225. Id:c22674dd-6751-e911-ae74-34f39add815e    Name:Arquitectura de Servicios
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+226. Id:2dc8a761-6a51-e911-ae74-34f39add815e    Name:Componetes de la Plataforma
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+227. Id:3b6dc0e4-ce50-e911-ae73-34f39add815e    Name:Construcción e Implementación
+    Assignment collection count: 0
+         Assignments: None
+228. Id:965e1a1e-d150-e911-ae73-34f39add815e    Name:Desarrollo del Módulo de Parametros
+    Assignment collection count: 0
+         Assignments: None
+229. Id:f8298dc7-d150-e911-ae73-34f39add815e    Name: Tipos de Curso
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+230. Id:85fc99da-d150-e911-ae73-34f39add815e    Name:Instituciones
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+231. Id:afe0eb04-d250-e911-ae73-34f39add815e    Name:Capacitadores
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+232. Id:c892fa15-d250-e911-ae73-34f39add815e    Name:Responsable de Cursos
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+233. Id:6d3bac25-d250-e911-ae73-34f39add815e    Name:Aulas
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+234. Id:384ebd2b-d250-e911-ae73-34f39add815e    Name:Categorias de Curso
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+235. Id:e351b236-d250-e911-ae73-34f39add815e    Name:Genero
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+236. Id:3bdd493d-d250-e911-ae73-34f39add815e    Name:Ubicación
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+237. Id:7aff414d-d250-e911-ae73-34f39add815e    Name:Cursos
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+238. Id:c70c1492-6751-e911-ae74-34f39add815e    Name:Migrar información del Excel a la Base de Datos
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+239. Id:1c5e1a1e-d150-e911-ae73-34f39add815e    Name:Desarrollo de Módulo de Soporte de Cursos
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+240. Id:610b254a-d150-e911-ae73-34f39add815e    Name:Desarrollo de Módulo Estudiantes
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+241. Id:2cb5a664-d150-e911-ae73-34f39add815e    Name:Crear Consutla de BD que sirva de consumo de Información para el BI
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+242. Id:932d4373-d150-e911-ae73-34f39add815e    Name:Integración con el BI
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+243. Id:c58237ae-2852-e911-ae75-34f39add815e    Name:Pruebas Unitarias
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+244. Id:536dc0e4-ce50-e911-ae73-34f39add815e    Name:Pruebas
+    Assignment collection count: 0
+         Assignments: None
+245. Id:bad161ce-2952-e911-ae75-34f39add815e    Name:Puesta en Calidad
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+246. Id:08e601ca-6551-e911-ae74-34f39add815e    Name:Pruebas Funcionales
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+247. Id:42d4d8f6-5f51-e911-ae74-34f39add815e    Name:Agendar Pruebas de VRA para aplicación, Servidor y BD
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+248. Id:5cdfaa65-6151-e911-ae74-34f39add815e    Name:Pruebas de Integración
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+249. Id:7dd359eb-ce50-e911-ae73-34f39add815e    Name:Implementación
+    Assignment collection count: 0
+         Assignments: None
+250. Id:95d359eb-ce50-e911-ae73-34f39add815e    Name:Capacitación
+    Assignment collection count: 3
+         Assignments: Antonia Vergara, Caridad de León, Juan Martinez,
+251. Id:2ef8399e-d250-e911-ae73-34f39add815e    Name:Puesta en Producción
+    Assignment collection count: 1
+         Assignments: Paulo Rodriguez,
+252. Id:948d4239-5f51-e911-ae74-34f39add815e    Name:Transición para la entrega de la solución
+    Assignment collection count: 4
+         Assignments: Antonia Vergara, Caridad de León, Gabriel Reyes, Javier Garrido,
+253. Id:4fa2b502-cf50-e911-ae73-34f39add815e    Name:Cierre
+    Assignment collection count: 0
+         Assignments: None
+254. Id:1ee701f4-6751-e911-ae74-34f39add815e    Name:Subir información de la Arquitectura en el SISPLA
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+255. Id:d41b3e6a-6651-e911-ae74-34f39add815e    Name:Notificar por correo la entrega del Proyecto
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+256. Id:da00f362-6651-e911-ae74-34f39add815e    Name:Documento de Cierre de proyecto
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+257. Id:2b5da6d5-4952-e911-ae75-34f39add815e    Name:Integrar Información de la Central Telefónica al Directorio Activo y SARH e INNOVAMe
+    Assignment collection count: 0
+         Assignments: None
+258. Id:12c0ec45-4a52-e911-ae75-34f39add815e    Name:Inicio
+    Assignment collection count: 0
+         Assignments: None
+259. Id:c508cf75-4a52-e911-ae75-34f39add815e    Name:Informar via Email el Inicio de Proyecto
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+260. Id:a7e8827c-4a52-e911-ae75-34f39add815e    Name:Listar Alcanzable General de Proyecto
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+261. Id:8630355d-4a52-e911-ae75-34f39add815e    Name:Informar via Email alcansable general del proyecto
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+262. Id:9a62574e-4a52-e911-ae75-34f39add815e    Name:Análisis y Evaluación de requerimientos
+    Assignment collection count: 0
+         Assignments: None
+263. Id:1d335c85-4a52-e911-ae75-34f39add815e    Name:Detalle de Funcionalidades
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Moisés Ortega,
+264. Id:b7321955-4a52-e911-ae75-34f39add815e    Name:Construcción e Implementación
+    Assignment collection count: 0
+         Assignments: None
+265. Id:daae3810-4c52-e911-ae75-34f39add815e    Name:Desarrollo
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+266. Id:f2ae3810-4c52-e911-ae75-34f39add815e    Name:Prueba
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+267. Id:60f99318-4c52-e911-ae75-34f39add815e    Name:Implementación
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+268. Id:11eba91e-4c52-e911-ae75-34f39add815e    Name:Cierre
+    Assignment collection count: 0
+         Assignments: None
+269. Id:3863172f-4c52-e911-ae75-34f39add815e    Name:Subir información de la Arquitectura en el SISPLA
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+270. Id:3a63172f-4c52-e911-ae75-34f39add815e    Name:Notificar por correo la entrega del Proyecto
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+271. Id:9d55d492-816a-e911-ae91-34f39add815e    Name:Procedimiento para el Versionamiento de Aplicaciones y Base de Datos
+    Assignment collection count: 0
+         Assignments: None
+272. Id:dbf821fd-876a-e911-ae91-34f39add815e    Name:Requerimientos y Unificar expectativas
+    Assignment collection count: 0
+         Assignments: None
+273. Id:27263ccf-886a-e911-ae91-34f39add815e    Name:Reunión para unificar expectativas
+    Assignment collection count: 5
+         Assignments: BD Consultor, Javier Garrido, Lidia Serrano, Moisés Ortega, Paulo Rodriguez,
+274. Id:8892c1e0-886a-e911-ae91-34f39add815e    Name:Levantamiento de requerimientos generales
+    Assignment collection count: 5
+         Assignments: BD Consultor, Javier Garrido, Lidia Serrano, Moisés Ortega, Paulo Rodriguez,
+275. Id:11ec9449-8a6a-e911-ae91-34f39add815e    Name:Confección del Procedimiento
+    Assignment collection count: 0
+         Assignments: None
+276. Id:83d78bbb-af6a-e911-ae91-34f39add815e    Name:Investigación
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+277. Id:9f55d492-816a-e911-ae91-34f39add815e    Name:Confección Procedimiento
+    Assignment collection count: 1
+         Assignments: Moisés Ortega,
+278. Id:a155d492-816a-e911-ae91-34f39add815e    Name:Revisión Procedimiento
+    Assignment collection count: 5
+         Assignments: BD Consultor, Javier Garrido, Lidia Serrano, Moisés Ortega, Paulo Rodriguez,
+279. Id:a355d492-816a-e911-ae91-34f39add815e    Name:Aprobación Procedimiento Electrónico
+    Assignment collection count: 0
+         Assignments: None
+280. Id:a555d492-816a-e911-ae91-34f39add815e    Name:Validación final del Proceso con los actores del Proceso
+    Assignment collection count: 5
+         Assignments: BD Consultor, Javier Garrido, Lidia Serrano, Moisés Ortega, Paulo Rodriguez,
+281. Id:a755d492-816a-e911-ae91-34f39add815e    Name:Verificación por La Dirección de Tecnología
+    Assignment collection count: 1
+         Assignments: Joaquín Huertas,
+282. Id:a955d492-816a-e911-ae91-34f39add815e    Name:Aprobación del Procedimiento por la Dirección de Tecnología
+    Assignment collection count: 1
+         Assignments: Joaquín Huertas,
+283. Id:b555d492-816a-e911-ae91-34f39add815e    Name:Divulgación
+    Assignment collection count: 0
+         Assignments: None
+284. Id:b755d492-816a-e911-ae91-34f39add815e    Name:Subir Procedimiento al Portal INNOVAMe
+    Assignment collection count: 1
+         Assignments: Juan Martinez,
+285. Id:b955d492-816a-e911-ae91-34f39add815e    Name:Reunión de divulgación con el área de Desarrollo y Base de Datos
+    Assignment collection count: 5
+         Assignments: BD Consultor, Javier Garrido, Lidia Serrano, Moisés Ortega, Paulo Rodriguez,
+
+3. 7588e36d-a650-e911-ae73-34f39add815e   Gestionar Documentación para el Soporte del SARH      03/27/2019 3:38:58 p.m. 
+
+Task collection count: 18
+1. Id:8488e36d-a650-e911-ae73-34f39add815e      Name:Gestionar Documentación para el Soporte del SARH
+    Assignment collection count: 0
+         Assignments: None
+2. Id:7a88e36d-a650-e911-ae73-34f39add815e      Name:Confeccionar TDR
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+3. Id:7b88e36d-a650-e911-ae73-34f39add815e      Name:Confeccionar Requisición
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+4. Id:7c88e36d-a650-e911-ae73-34f39add815e      Name:Confeccionar Modelo de Contrato
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+5. Id:7d88e36d-a650-e911-ae73-34f39add815e      Name:Firmar Requisición (Director/Tramitador)
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Joaquín Huertas,
+6. Id:7e88e36d-a650-e911-ae73-34f39add815e      Name:Revisión por Compras
+    Assignment collection count: 1
+         Assignments: Zulma Gonzalez,
+7. Id:7f88e36d-a650-e911-ae73-34f39add815e      Name:Revisión por Legal
+    Assignment collection count: 1
+         Assignments: Omar Arcia,
+8. Id:8088e36d-a650-e911-ae73-34f39add815e      Name:Entrega de la Documentación a Compras
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+9. Id:8188e36d-a650-e911-ae73-34f39add815e      Name:Reserva de la Partida
+    Assignment collection count: 2
+         Assignments: Guadalupe Franco, Javier Garrido,
+10. Id:8288e36d-a650-e911-ae73-34f39add815e     Name:Firma del Administración y Finanzas
+    Assignment collection count: 1
+         Assignments: Ignacio Molino,
+11. Id:8388e36d-a650-e911-ae73-34f39add815e     Name:Validación de la Oficina de Fiscalización
+    Assignment collection count: 1
+         Assignments: Javier Manning,
+12. Id:9888e36d-a650-e911-ae73-34f39add815e     Name:Publicación
+    Assignment collection count: 1
+         Assignments: Elsa Jaén,
+13. Id:9988e36d-a650-e911-ae73-34f39add815e     Name:Apertura de Sobre
+    Assignment collection count: 1
+         Assignments: Zulma Gonzalez,
+14. Id:9a88e36d-a650-e911-ae73-34f39add815e     Name:Resolución de Comisión Verificadora
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Teresa Berbey,
+15. Id:9b88e36d-a650-e911-ae73-34f39add815e     Name:Emitir Resultado de Comisión Verificadora
+    Assignment collection count: 0
+         Assignments: None
+16. Id:9c88e36d-a650-e911-ae73-34f39add815e     Name:Confección del Contrato
+    Assignment collection count: 1
+         Assignments: Teresa Berbey,
+17. Id:9e88e36d-a650-e911-ae73-34f39add815e     Name:Refrendo de la CGRP
+    Assignment collection count: 1
+         Assignments: Javier Manning,
+18. Id:9d88e36d-a650-e911-ae73-34f39add815e     Name:Orden de Proceder
+    Assignment collection count: 1
+         Assignments: Zulma Gonzalez,
+
+4. 5ac16e93-bbe9-e811-ae1e-34f39add815e   Proyectos de la DSTI  11/16/2018 4:21:02 p.m.
+
+Task collection count: 280
+1. Id:69c16e93-bbe9-e811-ae1e-34f39add815e      Name:Gestionar Documentación para el Soporte del SARH (Recursos Hmanos)
+    Assignment collection count: 0
+         Assignments: None
+2. Id:5fc16e93-bbe9-e811-ae1e-34f39add815e      Name:Confeccionar TDR
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+3. Id:60c16e93-bbe9-e811-ae1e-34f39add815e      Name:Confeccionar Requisición
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+4. Id:61c16e93-bbe9-e811-ae1e-34f39add815e      Name:Confeccionar Modelo de Contrato
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+5. Id:62c16e93-bbe9-e811-ae1e-34f39add815e      Name:Firmar Requisición (Director/Tramitador)
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Joaquín Huertas,
+6. Id:63c16e93-bbe9-e811-ae1e-34f39add815e      Name:Revisión por Compras
+    Assignment collection count: 1
+         Assignments: Zulma Gonzalez,
+7. Id:64c16e93-bbe9-e811-ae1e-34f39add815e      Name:Revisión por Legal
+    Assignment collection count: 1
+         Assignments: Omar Arcia,
+8. Id:65c16e93-bbe9-e811-ae1e-34f39add815e      Name:Entrega de la Documentación a Compras
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+9. Id:66c16e93-bbe9-e811-ae1e-34f39add815e      Name:Reserva de la Partida
+    Assignment collection count: 2
+         Assignments: Guadalupe Franco, Javier Garrido,
+10. Id:67c16e93-bbe9-e811-ae1e-34f39add815e     Name:Firma del Administración y Finanzas
+    Assignment collection count: 1
+         Assignments: Ignacio Molino,
+11. Id:68c16e93-bbe9-e811-ae1e-34f39add815e     Name:Validación de la Oficina de Fiscalización
+    Assignment collection count: 1
+         Assignments: Javier Manning,
+12. Id:7dc16e93-bbe9-e811-ae1e-34f39add815e     Name:Publicación
+    Assignment collection count: 1
+         Assignments: Elsa Jaén,
+13. Id:7ec16e93-bbe9-e811-ae1e-34f39add815e     Name:Apertura de Sobre
+    Assignment collection count: 1
+         Assignments: Zulma Gonzalez,
+14. Id:7fc16e93-bbe9-e811-ae1e-34f39add815e     Name:Resolución de Comisión Verificadora
+    Assignment collection count: 2
+         Assignments: Javier Garrido, Teresa Berbey,
+15. Id:80c16e93-bbe9-e811-ae1e-34f39add815e     Name:Emitir Resultado de Comisión Verificadora
+    Assignment collection count: 0
+         Assignments: None
+16. Id:81c16e93-bbe9-e811-ae1e-34f39add815e     Name:Confección del Contrato
+    Assignment collection count: 1
+         Assignments: Teresa Berbey,
+17. Id:83c16e93-bbe9-e811-ae1e-34f39add815e     Name:Refrendo de la CGRP
+    Assignment collection count: 1
+         Assignments: Javier Manning,
+18. Id:82c16e93-bbe9-e811-ae1e-34f39add815e     Name:Orden de Proceder
+    Assignment collection count: 1
+         Assignments: Zulma Gonzalez,
+19. Id:5ec16e93-bbe9-e811-ae1e-34f39add815e     Name:Manejar Proyectos con Ms Project - Kanban
+    Assignment collection count: 0
+         Assignments: None
+20. Id:6ac16e93-bbe9-e811-ae1e-34f39add815e     Name:Investigar con Ms-Project
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+21. Id:6bc16e93-bbe9-e811-ae1e-34f39add815e     Name:Incorporar proyectos y actividades
+    Assignment collection count: 1
+         Assignments: Javier Garrido,
+22. Id:6cc16e93-bbe9-e811-ae1e-34f39add815e     Name:Procedimientos Electrónico para SIRCEL
+    Assignment collection count: 0
+         Assignments: None
+23. Id:6dc16e93-bbe9-e811-ae1e-34f39add815e     Name:Confección Procedimiento Electrónico
+    Assignment collection count: 1
