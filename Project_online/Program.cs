@@ -32,9 +32,9 @@ namespace Project_online
      
            Program connection = new Program();
             connection.conn();
-           // connection.actualiza_tareas("5a32731f-a750-e911-ae73-34f39add815e", "6132731f-a750-e911-ae73-34f39add815e", "2019-08-01", "2019-08-11", 11);
-            connection.leerbd();
-           // connection.listProject();
+           connection.actualiza_tareas("e4707c63-cbc9-e911-ab58-34f39add823a", "24f63a6a-cbc9-e911-ab58-34f39add823a", "2019-08-29", "2019-09-11", 33);
+          // connection.leerbd();
+          // connection.listProject();
         }
 
         private void listProject() {
@@ -43,8 +43,8 @@ namespace Project_online
             using (ProjectCont1)
             {
                 // Get the list of projects in Project Web App.
-                Guid ProjectGuid = new Guid("5a32731f-a750-e911-ae73-34f39add815e");
-                Guid TaskGuid = new Guid("ef32731f-a750-e911-ae73-34f39add815e");
+                Guid ProjectGuid = new Guid("2f7e6899-d9c8-e911-b070-00155db42408");
+                Guid TaskGuid = new Guid("0a0e6daa-d9c8-e911-b07b-00155db45101");
 
 
 
@@ -137,7 +137,13 @@ namespace Project_online
 
                 string connectionString = "server=" + ip + ";uid=" + user + ";pwd=" + passw + " ;database=" + db + ";";
                 connect = new MySqlConnection(connectionString);
-                string sql = "select project_id,task_id, start_date, end_date,progress,updated_at  from projects where id =24";
+                string sql = "SELECT project_id,task_id, start_date, end_date,progress,updated_at  from projects";
+                sql += " where updated_at >= DATE_FORMAT((SYSDATE() - INTERVAL 6 DAY), '%Y-%m-%d')";
+                sql += " OR  created_at >= DATE_FORMAT((SYSDATE() - INTERVAL 6 DAY), '%Y-%m-%d')";
+                sql += " OR created_at >= DATE_FORMAT((SYSDATE() - INTERVAL 6 DAY), '%Y-%m-%d')";
+                sql += " OR updated_at >= DATE_FORMAT((SYSDATE() - INTERVAL 6 DAY), '%Y-%m-%d')";
+                sql += " ORDER BY id";
+
 
                 if (connect.State != ConnectionState.Open)
                 {
@@ -188,10 +194,18 @@ namespace Project_online
            
                 csom.PublishedProject proj2Edit = projCollection.First();
                 csom.DraftProject projCheckedOut = proj2Edit.CheckOut();
-                ProjectCont1.Load(projCheckedOut.Tasks);
-                ProjectCont1.ExecuteQuery();
+
+                if (proj2Edit.IsCheckedOut != true) {
+
+                    ProjectCont1.Load(projCheckedOut.Tasks);
+
+                    ProjectCont1.ExecuteQuery();
+                   
+                }
+
                 csom.DraftTaskCollection tskcoll = projCheckedOut.Tasks;
-               
+
+
                 foreach (csom.DraftTask Task in tskcoll)
                 {
                     if ((Task.Id != null) && (Task.Id == TaskGuid) )
@@ -209,11 +223,13 @@ namespace Project_online
                     }
                 }
                 projCheckedOut.Publish(true);
+     
                 csom.QueueJob qJob = ProjectCont1.Projects.Update();
                 csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 20);
+                 
                 projCheckedOut.CheckIn(true);
 
-        
+
             }
 
         }
