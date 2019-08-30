@@ -24,7 +24,7 @@ namespace Project_online
         static csom.ProjectContext ProjectCont1;
         MySqlConnection connect = new MySqlConnection();
         string exePath = System.Reflection.Assembly.GetEntryAssembly().Location;
-        public PublishedProject pubProj;
+ 
 
 
         static void Main(string[] args)
@@ -32,9 +32,97 @@ namespace Project_online
      
            Program connection = new Program();
             connection.conn();
-           connection.actualiza_tareas("e4707c63-cbc9-e911-ab58-34f39add823a", "24f63a6a-cbc9-e911-ab58-34f39add823a", "2019-08-29", "2019-09-11", 33);
-          // connection.leerbd();
-          // connection.listProject();
+            // connection.actualiza_tareas("be62971f-cfc9-e911-ab58-34f39add823a", "Avances", "03/10/2018", "30/10/2018", 55);
+             connection.leerbd();
+            // connection.listProject();
+           // connection.UddateTask("","","",12 );
+        }
+
+        private void UddateTask(string gui, string fi, string ff,  int porcent)
+        {
+
+            using (ProjectCont1)
+            {
+
+                Guid ProjectGuid = new Guid(gui);
+                var projCollection = ProjectCont1.LoadQuery(
+                 ProjectCont1.Projects
+                   .Where(p => p.Id == ProjectGuid));
+                ProjectCont1.ExecuteQuery();
+                csom.PublishedProject proj2Edit = projCollection.First();
+                DraftProject draft2Edit = proj2Edit.CheckOut();
+                ProjectCont1.Load(draft2Edit);
+                ProjectCont1.Load(draft2Edit.Tasks);
+                ProjectCont1.ExecuteQuery();
+                //
+                var tareas = draft2Edit.Tasks;
+                foreach (DraftTask tsk in tareas)
+                {
+                 tsk.Start = Convert.ToDateTime(fi);
+                 tsk.Finish = Convert.ToDateTime(ff);
+                 //tsk.Duration = duracion;
+                 tsk.PercentComplete = porcent;
+                }
+
+                draft2Edit.Publish(true);
+                csom.QueueJob qJob = ProjectCont1.Projects.Update();
+                csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 200);
+                //
+                qJob = ProjectCont1.Projects.Update();
+                jobState = ProjectCont1.WaitForQueue(qJob, 20);
+
+                if (jobState == JobState.Success)
+                {
+                    Console.WriteLine("\nSuccess!");
+                }
+
+            }
+        }
+
+        private void addTask() {
+
+            using (ProjectCont1)
+            {
+
+                Guid ProjectGuid = new Guid("e4707c63-cbc9-e911-ab58-34f39add823a");
+          
+
+
+                var projCollection = ProjectCont1.LoadQuery(
+                 ProjectCont1.Projects
+                   .Where(p => p.Id == ProjectGuid));
+                        ProjectCont1.ExecuteQuery();
+
+                csom.PublishedProject proj2Edit = projCollection.First();
+
+                DraftProject draft2Edit = proj2Edit.CheckOut();
+
+                ProjectCont1.Load(draft2Edit);
+                ProjectCont1.Load(draft2Edit.Tasks);
+                ProjectCont1.ExecuteQuery();
+
+                TaskCreationInformation newTask = new TaskCreationInformation();
+                newTask.Name = "Prueba";
+                newTask.IsManual = false;
+                newTask.Start = Convert.ToDateTime("30/08/2019"); 
+                newTask.Id = Guid.NewGuid();
+                newTask.Finish = Convert.ToDateTime("10/09/2019"); 
+
+                DraftTask draftTask = draft2Edit.Tasks.Add(newTask);
+
+                draft2Edit.Publish(true);             
+                csom.QueueJob qJob = ProjectCont1.Projects.Update();
+                csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 20);
+                //
+                qJob = ProjectCont1.Projects.Update();
+                jobState = ProjectCont1.WaitForQueue(qJob, 20);
+
+                if (jobState == JobState.Success)
+                {
+                    Console.WriteLine("\nSuccess!");
+                }
+
+            }
         }
 
         private void listProject() {
@@ -137,7 +225,9 @@ namespace Project_online
 
                 string connectionString = "server=" + ip + ";uid=" + user + ";pwd=" + passw + " ;database=" + db + ";";
                 connect = new MySqlConnection(connectionString);
-                string sql = "SELECT project_id,task_id, start_date, end_date,progress,updated_at  from projects";
+
+                                   //(string gui, string fi, string ff, string duracion, int porcent)
+                string sql = "SELECT project_id, start_date, end_date,progress,updated_at  from projects";
                 sql += " where updated_at >= DATE_FORMAT((SYSDATE() - INTERVAL 6 DAY), '%Y-%m-%d')";
                 sql += " OR  created_at >= DATE_FORMAT((SYSDATE() - INTERVAL 6 DAY), '%Y-%m-%d')";
                 sql += " OR created_at >= DATE_FORMAT((SYSDATE() - INTERVAL 6 DAY), '%Y-%m-%d')";
@@ -160,8 +250,8 @@ namespace Project_online
  
                         foreach (DataRow row in dt.Rows)
                         {
-                           
-                            actualiza_tareas(row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), Convert.ToInt16(row[4]));
+
+                            UddateTask(row[0].ToString(), row[1].ToString(), row[2].ToString(),  Convert.ToInt16(row[3]));
                         }
 
               
@@ -184,7 +274,7 @@ namespace Project_online
             {
 
                 Guid ProjectGuid = new Guid(np);
-                Guid TaskGuid = new Guid(nt);
+             //   Guid TaskGuid = new Guid(nt);
 
 
                 var projCollection = ProjectCont1.LoadQuery(
@@ -193,22 +283,13 @@ namespace Project_online
                 ProjectCont1.ExecuteQuery();
            
                 csom.PublishedProject proj2Edit = projCollection.First();
-                csom.DraftProject projCheckedOut = proj2Edit.CheckOut();
-
-                if (proj2Edit.IsCheckedOut != true) {
-
-                    ProjectCont1.Load(projCheckedOut.Tasks);
-
-                    ProjectCont1.ExecuteQuery();
-                   
-                }
-
-                csom.DraftTaskCollection tskcoll = projCheckedOut.Tasks;
-
-
-                foreach (csom.DraftTask Task in tskcoll)
+                csom.DraftProject projCheckedOut = proj2Edit.CheckOut();         
+                ProjectCont1.Load(projCheckedOut.Tasks);
+                ProjectCont1.ExecuteQuery();
+               csom.DraftTaskCollection tskcoll = projCheckedOut.Tasks;
+               foreach (csom.DraftTask Task in tskcoll)
                 {
-                    if ((Task.Id != null) && (Task.Id == TaskGuid) )
+                    if ((Task.Id != null) && (Task.Name == nt))
                     {
 
                         ProjectCont1.Load(Task.CustomFields);
@@ -222,11 +303,9 @@ namespace Project_online
                         Task.Assignments.Add(r);
                     }
                 }
-                projCheckedOut.Publish(true);
-     
+                projCheckedOut.Publish(true);     
                 csom.QueueJob qJob = ProjectCont1.Projects.Update();
-                csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 20);
-                 
+                csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 20);                 
                 projCheckedOut.CheckIn(true);
 
 
