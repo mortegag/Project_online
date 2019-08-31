@@ -25,17 +25,17 @@ namespace Project_online
         MySqlConnection connect = new MySqlConnection();
         string exePath = System.Reflection.Assembly.GetEntryAssembly().Location;
  
-
-
         static void Main(string[] args)
         {          
      
            Program connection = new Program();
             connection.conn();
             // connection.actualiza_tareas("be62971f-cfc9-e911-ab58-34f39add823a", "Avances", "03/10/2018", "30/10/2018", 55);
-             connection.leerbd();
+            // connection.leerbd();
             // connection.listProject();
-           // connection.UddateTask("","","",12 );
+            // connection.UddateTask("","","",12 );
+           connection.Project();
+
         }
 
         private void UddateTask(string gui, string fi, string ff,  int porcent)
@@ -122,6 +122,44 @@ namespace Project_online
                     Console.WriteLine("\nSuccess!");
                 }
 
+            }
+        }
+   
+
+
+        private void Project() {
+            int j = 1;
+
+            using (ProjectCont1)
+            {
+               
+                DateTime dia = DateTime.Today.AddDays(0);
+
+                DateTime hoy = DateTime.Today;
+                    DateTime ayer = hoy.AddDays(-4);
+             
+
+                var projCollection = ProjectCont1.LoadQuery(
+                    ProjectCont1.Projects
+                     .Where(p => p.CreatedDate >= ayer));
+                ProjectCont1.ExecuteQuery();
+
+
+                foreach (PublishedProject pubProj in projCollection)
+                {
+               
+                    string Guid = pubProj.Id.ToString();
+                    List<string> files = new List<string>();
+                    files.Add(Guid+","+ pubProj.Name+","+ pubProj.CreatedDate);
+
+
+                    Console.WriteLine("\n{0}. {1}   {2} \t{3} \n", j++, pubProj.Id, pubProj.Name, pubProj.CreatedDate);
+                    //comparar dos listas y buscar las diferencas
+                    var list1 = new List<int> { 1, 2, 3, 4, 5 };
+                    var list2 = new List<int> { 3, 4, 5, 6, 7 };
+
+                    var list3 = list1.Except(list2).ToList(); //list3 contains only 1, 2
+                }
             }
         }
 
@@ -267,51 +305,6 @@ namespace Project_online
             }
         }
 
-        public void  actualiza_tareas(string np, string nt, string fi, string ff, int pa2)
-        {
-           
-            using(ProjectCont1)
-            {
-
-                Guid ProjectGuid = new Guid(np);
-             //   Guid TaskGuid = new Guid(nt);
-
-
-                var projCollection = ProjectCont1.LoadQuery(
-                    ProjectCont1.Projects
-                     .Where(p => p.Id  == ProjectGuid));
-                ProjectCont1.ExecuteQuery();
-           
-                csom.PublishedProject proj2Edit = projCollection.First();
-                csom.DraftProject projCheckedOut = proj2Edit.CheckOut();         
-                ProjectCont1.Load(projCheckedOut.Tasks);
-                ProjectCont1.ExecuteQuery();
-               csom.DraftTaskCollection tskcoll = projCheckedOut.Tasks;
-               foreach (csom.DraftTask Task in tskcoll)
-                {
-                    if ((Task.Id != null) && (Task.Name == nt))
-                    {
-
-                        ProjectCont1.Load(Task.CustomFields);
-                        ProjectCont1.ExecuteQuery();                        
-                        Task.ActualStart = Convert.ToDateTime(fi); //DateTime.Today;
-                        Task.ActualFinish = Convert.ToDateTime(ff);//DateTime.Today;
-                        Task.PercentComplete = pa2;                        
-                        csom.AssignmentCreationInformation r = new csom.AssignmentCreationInformation();
-                        r.Id = Guid.NewGuid();
-                        r.TaskId = Task.Id;
-                        Task.Assignments.Add(r);
-                    }
-                }
-                projCheckedOut.Publish(true);     
-                csom.QueueJob qJob = ProjectCont1.Projects.Update();
-                csom.JobState jobState = ProjectCont1.WaitForQueue(qJob, 20);                 
-                projCheckedOut.CheckIn(true);
-
-
-            }
-
-        }
     }
     
     }

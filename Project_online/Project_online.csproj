@@ -39,7 +39,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\SARH\RRHH\AccionesPersonal\AccionesPersonalWF\bin\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\personas\Personas\AccionesPersonalWS\obj\Release\Package\PackageTmp\bin\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -76,7 +76,7 @@
       <Version>1.0.2</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.SharePointOnline.CSOM">
-      <Version>16.1.9119.1200</Version>
+      <Version>16.1.9119.120</Version>
     </PackageReference>
     <PackageReference Include="PS.Common.CF.Project.Client.Wpf.Package">
       <Version>5.0.0.55</Version>
