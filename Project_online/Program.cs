@@ -24,7 +24,20 @@ namespace Project_online
         static csom.ProjectContext ProjectCont1;
         MySqlConnection connect = new MySqlConnection();
         string exePath = System.Reflection.Assembly.GetEntryAssembly().Location;
- 
+        /*
+        listado dep Proyectos nuevos del lado de Project Online de los 
+        @project_New para insertar proyectos a MySql
+        ultimos 5 dias actuales
+        */
+        List<string> project_New;
+        /* Listado indices GUI de proyectos del lado de MYSQL
+         */
+        List<string> ssec_gui;
+        /*Listado de indices GUI de proyectos del lado de Project Online
+         */
+        List<string> project_gui;
+
+
         static void Main(string[] args)
         {          
      
@@ -147,20 +160,31 @@ namespace Project_online
 
                 foreach (PublishedProject pubProj in projCollection)
                 {
-               
-                    string Guid = pubProj.Id.ToString();
-                    List<string> files = new List<string>();
-                    files.Add(Guid+","+ pubProj.Name+","+ pubProj.CreatedDate);
 
+
+                    string Guid = pubProj.Id.ToString();
+                    //Lista de Proyectos del lado de Project para insertar
+                    project_New = new List<string>();
+                    project_New.Add(Guid);
+                    project_New.Add(pubProj.Name);
+                    project_New.Add(pubProj.CreatedDate.ToShortDateString());
+
+                    //lista de GUI del lado de Project para comparar borrar
+                     ssec_gui = new List<string>();
+                     ssec_gui.Add(Guid);
 
                     Console.WriteLine("\n{0}. {1}   {2} \t{3} \n", j++, pubProj.Id, pubProj.Name, pubProj.CreatedDate);
-                    //comparar dos listas y buscar las diferencas
-                    var list1 = new List<int> { 1, 2, 3, 4, 5 };
-                    var list2 = new List<int> { 3, 4, 5, 6, 7 };
 
-                    var list3 = list1.Except(list2).ToList(); //list3 contains only 1, 2
+                    //intento de comparar dos matrices multidimencionales //comparar dos listas y buscar las diferencas
+                    //var project = new List<string> { Guid + "," + pubProj.Name + "," + pubProj.CreatedDate };
+                    //var projectGUI = new List<string> { Guid };
+                    //var ssec = new List<string> { "datos del Mysql "};
+                    //var projectFaltan = projectGUI.Except(ssec.ToList()); //list3 contains only 1, 2
+
+
                 }
             }
+            insertProject();
         }
 
         private void listProject() {
@@ -288,8 +312,12 @@ namespace Project_online
  
                         foreach (DataRow row in dt.Rows)
                         {
-
+                            //Funcion de actualizacion de resitros en el Project
                             UddateTask(row[0].ToString(), row[1].ToString(), row[2].ToString(),  Convert.ToInt16(row[3]));
+                            //Lista de GUI lado Mysql para Borrar
+                            ssec_gui = new List<string>();
+                            ssec_gui.Add(row[0].ToString());
+
                         }
 
               
@@ -304,6 +332,87 @@ namespace Project_online
 
             }
         }
+
+
+        private void insertProject()
+        {
+
+            string ip = "localhost";
+            string user = "root";
+            string passw = "";
+            string db = "AIGDB_SSEC";
+
+            try
+            {
+
+                string connectionString = "server=" + ip + ";uid=" + user + ";pwd=" + passw + " ;database=" + db + ";";
+                connect = new MySqlConnection(connectionString);
+                var gui = project_New[0];
+                var nombre = project_New[1];
+                var fecha = project_New[2];
+
+                string sql = " INSERT INTO projects ("+ gui+ "," + nombre + "," + fecha + ")";
+                sql += " SELECT gui, nombre, fecha ";
+                sql += " WHERE gui <> "+gui ;
+                       
+
+                if (connect.State != ConnectionState.Open)
+                {
+                    connect.Open();
+                }
+
+
+                MySqlCommand cmd = new MySqlCommand(sql, connect);
+                cmd.ExecuteNonQuery();
+
+                connect.Close(); 
+
+
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+
+            }
+        }
+
+        private void DeleteProject()
+        {
+
+            string ip = "localhost";
+            string user = "root";
+            string passw = "";
+            string db = "AIGDB_SSEC";
+
+            try
+            {
+
+                string connectionString = "server=" + ip + ";uid=" + user + ";pwd=" + passw + " ;database=" + db + ";";
+                connect = new MySqlConnection(connectionString);
+
+                if (connect.State != ConnectionState.Open){ connect.Open();}
+
+                var projectFaltan = project_gui.Except(ssec_gui.ToList());
+
+                foreach (string gui in projectFaltan)
+                {
+                string sql = " Delete projects ";
+                sql += " WHERE gui ="+ gui;         
+                MySqlCommand cmd = new MySqlCommand(sql, connect);
+                cmd.ExecuteNonQuery();
+                }
+
+                connect.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+
+            }
+        }
+
 
     }
     
