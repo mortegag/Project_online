@@ -36,12 +36,17 @@ namespace Project_online
         /*Listado de indices GUI de proyectos del lado de Project Online
          */
         List<string> project_gui;
-
-
+        
         static void Main(string[] args)
-        {          
-     
-           Program connection = new Program();
+        {
+
+            //
+            var mysql = new List<string> { "carro","gato" };
+            var project = new List<string> { "carro","gato","piñata"};
+            var result = mysql.Except(project.ToList()); //pulsa , perro 
+            //
+
+            Program connection = new Program();
             connection.conn();
             // connection.actualiza_tareas("be62971f-cfc9-e911-ab58-34f39add823a", "Avances", "03/10/2018", "30/10/2018", 55);
             // connection.leerbd();
@@ -138,8 +143,6 @@ namespace Project_online
             }
         }
    
-
-
         private void Project() {
             int j = 1;
 
@@ -147,40 +150,42 @@ namespace Project_online
             {
                
                 DateTime dia = DateTime.Today.AddDays(0);
-
                 DateTime hoy = DateTime.Today;
-                    DateTime ayer = hoy.AddDays(-4);
-             
+                    DateTime ayer = hoy.AddDays(-4);            
 
                 var projCollection = ProjectCont1.LoadQuery(
                     ProjectCont1.Projects
                      .Where(p => p.CreatedDate >= ayer));
                 ProjectCont1.ExecuteQuery();
 
-
                 foreach (PublishedProject pubProj in projCollection)
                 {
-
-
                     string Guid = pubProj.Id.ToString();
                     //Lista de Proyectos del lado de Project para insertar
-                    project_New = new List<string>();
-                    project_New.Add(Guid);
-                    project_New.Add(pubProj.Name);
+                    project_New = new List<string>(); 
+                    project_New.Add(Guid);//Project_id IdDelProyecto
+                    project_New.Add(pubProj.Name);//name NombreDeProyecto
+                    project_New.Add(pubProj.Description);//description DescripciónDelProyecto
+                    //grouper AgrupadordeProyecto
+                    //compromise Compromiso                   
+                    project_New.Add(pubProj.StartDate.ToShortDateString());//start_date ComienzoAnticipadoDelProyecto
+                     project_New.Add(pubProj.FinishDate.ToShortDateString());//end_date FechaDeFinalizaciónDelProyecto
+                    //institution InstitucióndelEstado
+                    //action_line LíneadeAcción
+                    //responsable SeguimientodeProyecto
                     project_New.Add(pubProj.CreatedDate.ToShortDateString());
 
-                    //lista de GUI del lado de Project para comparar borrar
-                     ssec_gui = new List<string>();
+
+                    //lista de GUI del lado de Project para comparar y borrar
+                    ssec_gui = new List<string>();
                      ssec_gui.Add(Guid);
 
                     Console.WriteLine("\n{0}. {1}   {2} \t{3} \n", j++, pubProj.Id, pubProj.Name, pubProj.CreatedDate);
-
                     //intento de comparar dos matrices multidimencionales //comparar dos listas y buscar las diferencas
                     //var project = new List<string> { Guid + "," + pubProj.Name + "," + pubProj.CreatedDate };
                     //var projectGUI = new List<string> { Guid };
                     //var ssec = new List<string> { "datos del Mysql "};
                     //var projectFaltan = projectGUI.Except(ssec.ToList()); //list3 contains only 1, 2
-
 
                 }
             }
@@ -332,8 +337,7 @@ namespace Project_online
 
             }
         }
-
-
+        
         private void insertProject()
         {
 
@@ -412,7 +416,6 @@ namespace Project_online
 
             }
         }
-
 
     }
     
