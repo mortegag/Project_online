@@ -18,3 +18,7 @@ https://social.msdn.microsoft.com/Forums/en-US/c91644b7-3c0f-4d65-a8d7-2dec128d1
 
 Install-Package Microsoft.SharePointOnline.CSOM -Version 16.1.9119.1200
 https://docs.microsoft.com/en-us/office/client-developer/project/accessing-project-online-enterprise-custom-fields
+https://www.youtube.com/watch?v=sPx6gXS4xCQ
+http://blog.vitalyzhukov.ru/en/project-server-csom-custom-fields.aspx
+https://github.com/vzhukov/blog
+https://github.com/reshmee011/ProjectServer-2013
