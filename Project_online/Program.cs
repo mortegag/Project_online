@@ -41,9 +41,9 @@ namespace Project_online
         {
 
             //
-            var mysql = new List<string> { "carro","gato" };
-            var project = new List<string> { "carro","gato","piñata"};
-            var result = mysql.Except(project.ToList()); //pulsa , perro 
+            var mysql = new List<string> { "auto","moto" };
+            var project = new List<string> { "auto","moto","bici"};
+            var result = mysql.Except(project.ToList()); 
             //
 
             Program connection = new Program();
