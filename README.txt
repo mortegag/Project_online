@@ -5,11 +5,11 @@ paquete necesario para usarlo
 Install-Package Microsoft.Office.Project.Server -Version 1.0.2
 Install-Package Microsoft.SharePointOnline.CSOM -Version 16.1.9119.1200
 https://ssec.innovacion.gob.pa/login
-Envío usuario para la ARAP,
-Usuario: ARAP  Contraseña: #5072457
+EnvÃ­o usuario para la ARAP,
+Usuario: ARAP  ContraseÃ±a: #5072457
 
-Contraseña nueva para SENADIS:
-Usuario: SENADIS contraseña: #5072458
+ContraseÃ±a nueva para SENADIS:
+Usuario: SENADIS contraseÃ±a: #5072458
 
 
  https://social.technet.microsoft.com/Forums/en-US/78665a55-e717-4c7e-997e-90db8807acda/update-a-task-using-csom?forum=projectserver2010general
@@ -17,3 +17,8 @@ Usuario: SENADIS contraseña: #5072458
 https://social.msdn.microsoft.com/Forums/en-US/c91644b7-3c0f-4d65-a8d7-2dec128d1dcf/project-lookup-custom-field-update-with-csom?forum=project2010custprog
 
 Install-Package Microsoft.SharePointOnline.CSOM -Version 16.1.9119.1200
+https://docs.microsoft.com/en-us/office/client-developer/project/accessing-project-online-enterprise-custom-fields
+https://www.youtube.com/watch?v=sPx6gXS4xCQ
+http://blog.vitalyzhukov.ru/en/project-server-csom-custom-fields.aspx
+https://github.com/vzhukov/blog
+https://github.com/reshmee011/ProjectServer-2013
