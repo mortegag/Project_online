@@ -22,6 +22,7 @@ namespace Project_online
         const string userName = "mortega@innovacion.gob.pa";
         const string passWord = "Coco.1961";
         static csom.ProjectContext ProjectCont1;
+        
         MySqlConnection connect = new MySqlConnection();
         string exePath = System.Reflection.Assembly.GetEntryAssembly().Location;
         /*
@@ -45,14 +46,149 @@ namespace Project_online
             var project = new List<string> { "carro","gato","piñata"};
             var result = mysql.Except(project.ToList()); //pulsa , perro 
             //
-
+            
             Program connection = new Program();
-            connection.conn();
+            //connection.conn();
             // connection.actualiza_tareas("be62971f-cfc9-e911-ab58-34f39add823a", "Avances", "03/10/2018", "30/10/2018", 55);
             // connection.leerbd();
             // connection.listProject();
             // connection.UddateTask("","","",12 );
-           connection.Project();
+            // connection.Project();
+            //connection.customfield();
+
+            connection.ya();
+
+
+        }
+
+        public static void ReadCustomFieldValue()
+        {
+            /*
+            using (ProjectContext ProjectCont = new ProjectContext(Credentials.SiteURL))
+            {
+
+                SecureString password2 = new SecureString();
+
+                foreach (char c in Credentials.Password.ToCharArray()) password2.AppendChar(c);
+                ProjectCont.Credentials = new SharePointOnlineCredentials(Credentials.UserName, passWord2);
+                ProjectCont.Load(ProjectCont.Projects,
+                    c => c.IncludeWithDefaultProperties
+                    (
+                    pr => pr.CustomFields,
+                    pr => pr.IncludeCustomFields, 
+                    pr => pr.IncludeCustomFields.CustomFields
+                    ));
+                ProjectCont.ExecuteQuery();
+                foreach (PublishedProject item in ProjectCont.Projects)
+                {
+                    if (item.Name == "Project_00A")
+                    {
+                        foreach (var cust in item.IncludeCustomFields.FieldValues)
+                        {
+                            string customfieldID = cust.Key;
+                            string CsutomfieldValue = cust.Value.ToString();
+                        }
+                    }
+                }
+            }*/
+        }
+
+
+        public void ya() {
+
+
+            ProjectCont1 = new csom.ProjectContext(pwaPath);
+            SecureString securePassword = new SecureString();
+            foreach (char c in passWord.ToCharArray())
+            {
+                securePassword.AppendChar(c);
+            }
+            ProjectCont1.Credentials = new SharePointOnlineCredentials(userName, securePassword);
+            var creds = new SharePointOnlineCredentials(userName, securePassword);
+            int j = 0;
+            ProjectCont1.Load(ProjectCont1.Projects,
+                   c => c.IncludeWithDefaultProperties
+                   (
+                   pr => pr.CustomFields,
+                   pr => pr.IncludeCustomFields,
+                   pr => pr.IncludeCustomFields.CustomFields
+                   ));
+            ProjectCont1.ExecuteQuery();
+            foreach (PublishedProject item in ProjectCont1.Projects)
+            {
+                if (item.Name == "PROYECTO TEST MOISES")
+                {
+                    foreach (var cust in item.IncludeCustomFields.FieldValues)
+                    {
+                        string customfieldID = cust.Key;
+                        
+                        string CsutomfieldValue = cust.Value.ToString();
+                        Console.WriteLine("\n{0}. {1} \n", j++, customfieldID, CsutomfieldValue);
+
+                    }
+                }
+            }
+
+
+        }
+
+
+        public void conn()
+        {
+
+            ProjectCont1 = new csom.ProjectContext(pwaPath);
+            SecureString securePassword = new SecureString();
+            foreach (char c in passWord.ToCharArray())
+            {
+                securePassword.AppendChar(c);
+            }
+            ProjectCont1.Credentials = new SharePointOnlineCredentials(userName, securePassword);
+            var creds = new SharePointOnlineCredentials(userName, securePassword);
+
+        }
+
+        private void customfield() {
+
+
+            ProjectCont1 = new csom.ProjectContext(pwaPath);
+            SecureString securePassword = new SecureString();
+            foreach (char c in passWord.ToCharArray())
+            {
+                securePassword.AppendChar(c);
+            }
+            var creds = new SharePointOnlineCredentials(userName, securePassword);
+
+
+            var fieldId = new Guid("012e39a5-c4cd-e911-b075-00155d8c9a02");
+            var resourceId = new Guid("012e39a5-c4cd-e911-b075-00155d8c9a02");
+
+            using (var ctx = new ProjectContext(pwaPath))
+            {
+
+                ctx.Credentials = creds;
+
+                // Retrieve Enterprise Custom Field
+                var field = ctx.CustomFields.GetByGuid(fieldId);
+
+                // Load InernalName property, we will use it to get the value
+                ctx.Load(field,
+                    x => x.InternalName);
+
+                // Execture prepared query on server side
+                ctx.ExecuteQuery();
+
+                var fieldInternalName = field.InternalName;
+
+                // Retrieve recource by its Id
+                var resource = ctx.EnterpriseResources.GetByGuid(resourceId);
+
+                // !
+                // Load custom field value
+                ctx.Load(resource,
+                    x => x[fieldInternalName]);
+                ctx.ExecuteQuery();
+                // 
+            }
 
         }
 
@@ -267,17 +403,7 @@ namespace Project_online
             }
         }
 
-        private void conn() {
-
-            ProjectCont1 = new csom.ProjectContext(pwaPath);
-            SecureString securePassword = new SecureString();
-            foreach (char c in passWord.ToCharArray())
-            {
-                securePassword.AppendChar(c);
-            }
-            ProjectCont1.Credentials = new SharePointOnlineCredentials(userName, securePassword);
-            
-        }
+       
 
         private void leerbd()
         {
