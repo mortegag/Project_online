@@ -22,3 +22,5 @@ https://www.youtube.com/watch?v=sPx6gXS4xCQ
 http://blog.vitalyzhukov.ru/en/project-server-csom-custom-fields.aspx
 https://github.com/vzhukov/blog
 https://github.com/reshmee011/ProjectServer-2013
+SOLUCION PARA LEER CAMPOS PERSONALIZADOS
+https://github.com/OfficeDev/Project-CSOM-Read-Enterprise-CustomFields/blob/master/Project-CSOM-Read-Enterprise-CustomFields/Program.cs
