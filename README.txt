@@ -26,3 +26,7 @@ SOLUCION PARA LEER CAMPOS PERSONALIZADOS
 https://github.com/OfficeDev/Project-CSOM-Read-Enterprise-CustomFields/blob/master/Project-CSOM-Read-Enterprise-CustomFields/Program.cs
 escribir en XML
 https://stackoverflow.com/questions/14372298/how-to-insert-value-in-a-xml-files
+actualizar campos personalizados en TENAT
+https://social.msdn.microsoft.com/Forums/en-US/d79f22f2-7fd2-46af-b778-e189c8611120/use-csom-to-update-projects-custom-fields?forum=project2010custprog
+busqueda de actualizar campos personalizados 
+https://www.google.com/search?q=c+%23+how+to+update+Include+Custom+Fields+CSOM+Project+Server&rlz=1C1GCEU_enPA823PA823&oq=c+%23+how+to+update+Include+Custom+Fields+CSOM+Project+Server&aqs=chrome..69i57j69i64.42743j0j8&sourceid=chrome&ie=UTF-8
