@@ -30,6 +30,13 @@ actualizar campos personalizados en TENAT
 https://social.msdn.microsoft.com/Forums/en-US/d79f22f2-7fd2-46af-b778-e189c8611120/use-csom-to-update-projects-custom-fields?forum=project2010custprog
 busqueda de actualizar campos personalizados 
 https://www.google.com/search?q=c+%23+how+to+update+Include+Custom+Fields+CSOM+Project+Server&rlz=1C1GCEU_enPA823PA823&oq=c+%23+how+to+update+Include+Custom+Fields+CSOM+Project+Server&aqs=chrome..69i57j69i64.42743j0j8&sourceid=chrome&ie=UTF-8
+
+update custom field 13 septiembre de 2019
+https://www.oipapio.com/question-13038268
+http://www.jonashendrickx.com/tag/csom/
+
+
+
 para crear proyectos nuevos
 https://docs.microsoft.com/en-us/office/client-developer/project/getting-started-with-the-project-server-csom-and-net
 Seguimos descubriendo lista de valores de un combo Box
