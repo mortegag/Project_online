@@ -38,5 +38,11 @@ https://www.google.com/search?rlz=1C1CHBF_esPA857PA857&biw=1242&bih=568&sxsrf=AC
 
 https://social.msdn.microsoft.com/Forums/en-US/b4d3ee63-965b-4489-8b34-6ad53b128553/csom-update-custom-field-based-on-lookup-table?forum=project2010custprog
 
+EnterpriseResource res in resources
 
+https://social.msdn.microsoft.com/Forums/en-US/a0c4c2d5-eada-4966-a08a-4f8a3b15e62d/csom-to-add-resource-rate?forum=project2010custprog
+
+https://social.msdn.microsoft.com/Forums/en-US/4a2408b8-7aab-4774-ab10-736a5898578f/using-c-csom-to-update-a-resource-field?forum=project2010custprog
+
+https://social.msdn.microsoft.com/Forums/en-US/9e1be130-a04b-4e03-956b-54685cdffb9a/add-enterprise-resource-to-project-team-using-csom-in-project-server-2013?forum=project2010custprog
 
