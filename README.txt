@@ -53,3 +53,8 @@ https://social.msdn.microsoft.com/Forums/en-US/4a2408b8-7aab-4774-ab10-736a58985
 
 https://social.msdn.microsoft.com/Forums/en-US/9e1be130-a04b-4e03-956b-54685cdffb9a/add-enterprise-resource-to-project-team-using-csom-in-project-server-2013?forum=project2010custprog
 
+edicion de campos customizables 
+https://www.oipapio.com/question-13038268
+http://www.jonashendrickx.com/tag/csom/
+http://www.jonashendrickx.com/tag/csom/
+https://www.oipapio.com/question-13038268
