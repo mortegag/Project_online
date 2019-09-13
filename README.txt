@@ -32,3 +32,11 @@ busqueda de actualizar campos personalizados
 https://www.google.com/search?q=c+%23+how+to+update+Include+Custom+Fields+CSOM+Project+Server&rlz=1C1GCEU_enPA823PA823&oq=c+%23+how+to+update+Include+Custom+Fields+CSOM+Project+Server&aqs=chrome..69i57j69i64.42743j0j8&sourceid=chrome&ie=UTF-8
 para crear proyectos nuevos
 https://docs.microsoft.com/en-us/office/client-developer/project/getting-started-with-the-project-server-csom-and-net
+Seguimos descubriendo lista de valores de un combo Box
+https://stackoverflow.com/questions/47328097/get-guid-lookup-table-from-custome-field-in-microsoft-project-online
+https://www.google.com/search?rlz=1C1CHBF_esPA857PA857&biw=1242&bih=568&sxsrf=ACYBGNQCYRmxJH7G8G4FYqjUrZXPby5rPg%3A1568343678462&ei=fgZ7XeDpG8zb5gLhzZHQCg&q=c+%23+PROJECT+CSOM++consult+table+in+custom+project+fields&oq=c+%23+PROJECT+CSOM++consult+table+in+custom+project+fields&gs_l=psy-ab.12...28421.28421..34944...0.0..0.161.161.0j1......0....1..gws-wiz.jAKdJJ2jxNA&ved=0ahUKEwjgoNy-58zkAhXMrVkKHeFmBKo4ChDh1QMICw
+
+https://social.msdn.microsoft.com/Forums/en-US/b4d3ee63-965b-4489-8b34-6ad53b128553/csom-update-custom-field-based-on-lookup-table?forum=project2010custprog
+
+
+
