@@ -58,3 +58,4 @@ https://www.oipapio.com/question-13038268
 http://www.jonashendrickx.com/tag/csom/
 http://www.jonashendrickx.com/tag/csom/
 https://www.oipapio.com/question-13038268
+https://nearbaseline.com/2013/08/updating-lookup-table-values-using-jsom/
