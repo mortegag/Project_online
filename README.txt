@@ -59,3 +59,6 @@ http://www.jonashendrickx.com/tag/csom/
 http://www.jonashendrickx.com/tag/csom/
 https://www.oipapio.com/question-13038268
 https://nearbaseline.com/2013/08/updating-lookup-table-values-using-jsom/
+
+
+https://github.com/OfficeDev/Project-Add-in-REST-BasicDataOperations/blob/master/README.md
